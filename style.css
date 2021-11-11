@@ -753,7 +753,7 @@ input:checked + label .sub {
   }
   .burger {
     margin: auto;
-    margin-top: -15vh;
+    margin-top: -25vh;
     line-height: 3px;
     margin-right: -100vw;
   }
