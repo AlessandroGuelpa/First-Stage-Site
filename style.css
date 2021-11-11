@@ -755,7 +755,7 @@ input:checked + label .sub {
     margin: auto;
     margin-top: -15vh;
     line-height: 3px;
-    margin-right: -115vw;
+    margin-right: -100vw;
   }
   .comparsa ul {
     width: 32vh;
