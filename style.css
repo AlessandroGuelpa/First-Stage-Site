@@ -476,6 +476,9 @@ input:checked + label .sub {
   .info {
     margin-bottom: 50%;
   }
+  p{
+    font-size:20px
+  }
   .nascosto {
     height: 100%;
     width: 40vh;
