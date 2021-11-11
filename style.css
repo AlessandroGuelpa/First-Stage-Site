@@ -753,9 +753,9 @@ input:checked + label .sub {
   }
   .burger {
     margin: auto;
-    margin-top: -21vh;
+    margin-top: -15vh;
     line-height: 3px;
-    margin-right: -98vw;
+    margin-right: -115vw;
   }
   .comparsa ul {
     width: 32vh;
