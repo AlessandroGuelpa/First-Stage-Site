@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <title>Scarpe</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <!-- <link rel="icon" href="favicon.ico" type="image/x-icon" /> -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway"
+      rel="stylesheet"
+    />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type" />
+    <meta content="utf-8" http-equiv="encoding" />
+  </head>
+  <body>
+    <!-- Header e Nav-bar -->
+    <header>
+      <div class="header">
+        <!-- Logo -->
+        <div class="logo float-left">
+          <a href="#"><span>Scarpe</span></a>
+        </div>
+      </div>
+      <!-- Nav-Bar -->
+      <div class="nav-bar float-right">
+        <nav>
+          <!-- menu-orizzontale -->
+          <div class="orizzontal-menu">
+            <ul id="menu">
+              <li><a href="#noi" class="link">Un po' di noi</a></li>
+              <li><a href="#info" class="link">Info</a></li>
+              <li><a href="#port" class="link">Portfolio</a></li>
+              <li><a href="#dove" class="link">Dove siamo</a></li>
+            </ul>
+          </div>
+          <!-- burger-menu -->
+          <div class="burger">
+            <div class="menu">
+              <div class="slice"></div>
+              <div class="slice"></div>
+              <div class="slice"></div>
+            </div>
+            <!-- menu nascosto -->
+            <div class="menu-comparsa">
+              <ul>
+                <li><a href="#noi" class="linker">Un po' di noi</a></li>
+                <li><a href="#info" class="linker">Info</a></li>
+                <li><a href="#port" class="linker">Dove siamo</a></li>
+                <li><a href="#dove" class="linker">Portfolio</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- sezione slider immagini -->
+    <section id="slider">
+      <!-- contenitore principale -->
+      <div class="contenitore-slider">
+        <!-- slider contenente sia immagini che bullet (bullet sopra immagini, posizionato in basso) -->
+        <div class="slider">
+          <!-- div immagini -->
+          <div class="wrapper">
+            <div class="slide"><img src="foto1.jpg" alt="immagine" /></div>
+            <div class="slide"><img src="foto1.jpg" alt="immagine" /></div>
+            <div class="slide"><img src="foto1.jpg" alt="immagine" /></div>
+            <div class="slide"><img src="foto1.jpg" alt="immagine" /></div>
+            <div class="slide"><img src="foto1.jpg" alt="immagine" /></div>
+          </div>
+          <!-- div bullet -->
+          <div class="bottom">
+            <div class="bullet"></div>
+            <div class="bullet"></div>
+            <div class="bullet"></div>
+            <div class="bullet"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- sezione 3 immagini + testo hover -->
+    <section id="middle">
+      <!--flexbox allineato in orizzontale, versione mobile si allineano in verticale -->
+      <div class="contenitore-middle">
+        <div class="box">
+          <p class="nascosto"><span>Nuova Collezione!</span></p>
+        </div>
+        <div class="box">
+          <p class="nascosto"><span>Nuova Collezione!</span></p>
+        </div>
+        <div class="box">
+          <p class="nascosto"><span>Nuova Collezione!</span></p>
+        </div>
+      </div>
+    </section>
+    <!-- sezione form contatti -->
+    <section class="form-contatti">
+      <!-- form con submit non cliccabile se non si accettano i termini -->
+      <div class="form">
+        <h1>Form dei contatti</h1><br>
+        <form action="">
+          <input type="email" id="email" placeholder="email" /><br>
+          <input type="text" id="name" placeholder="name" /><br>
+          <span>Genere:</span><br>
+          <input type="radio" name="sesso" id="uomo" />
+          <label for="uomo">uomo</label>
+          <input type="radio" name="sesso" id="donna" />
+          <label for="donna">donna</label>
+          <input type="radio" name="sesso" id="altro" />
+          <label for="altro">altro</label><br><br>
+          <input type="checkbox" id="c" />
+          <label for="c">
+            I agree to terms and conditions<br /><input
+              type="submit"
+              value="Invia"
+              class="sub"
+              href="#"
+          /></label>
+          <p>*non puoi inviare la form senza accettare i termini</p>
+        </form>
+      </div>
+    </section>
+    <!-- sezione articolo da vendere -->
+    <section>
+      <!-- blocco -->
+      <div class="article-block">
+        <!-- blocco con immagine -->
+        <div class="article float-left">
+          <img src="foto1.jpg" alt="prodotto" />
+        </div>
+        <!-- blocco con prezzo -->
+        <div class="article float-right">
+          <h1>
+            <s><b style="filter:invert(100%);">$129.99</b></s><br>
+            <b style="color: red;">$80.99</b>
+          </h1>
+        </div>
+      </div>
+    </section>
+    <!-- sezione con Informazioni -->
+    <section class="information">
+      <div class="info">
+        <!-- ancora -->
+        <a name="info"><p>Info</p></a><br>
+        <ul>
+          <li><a href="#">Info</a></li>
+          <li><a href="#">Info</a></li>
+          <li><a href="#">Info</a></li>
+          <li><a href="#">Info</a></li>
+          <li><a href="#">Info</a></li>
+        </ul>
+      </div>
+    </section>
+    <!-- sezione con form -->
+    <section class="form-newsletter">
+      <div class="form">
+        <h1>Iscrizione Newsletter</h1>
+        <form action="">
+          <input type="email" name="email" id="email2" placeholder="email" /><br>
+          <input type="text" name="name" id="name2" placeholder="name" /><br>
+          <span>Genere:</span><br>
+          <input type="radio" name="sesso" id="uomo" value="uomo" />
+          <label for="uomo">uomo</label>
+          <input type="radio" name="sesso" id="donna" value="donna" />
+          <label for="donna">donna</label>
+          <input type="radio" name="sesso" id="altro" value="altro" />
+          <label for="altro">altro</label><br />
+          <input type="submit" value="Invia" />
+        </form>
+      </div>
+    </section>
+    <!-- footer -->
+    <footer>
+      <!-- 3 colonne all'interno di un flexbox -->
+      <div class="footer">
+        <!-- colonna un po di noi -->
+        <div class="column float-left">
+          <!-- ancora -->
+          <a name="noi"><p>Un po' di noi</p></a><br>
+          <img id="loghetto"src="foto1.jpg" alt="" /><br>
+          <span>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Laudantium, soluta! Nulla in deserunt ullam ducimus quidem
+            consequuntur aliquam, fugit debitis, molestias eligendi asperiores
+            laborum minus dolorem odio, rem ipsum cum?
+          </span>
+        </div>
+        <!-- colonna portfolio -->
+        <div class="column float-left">
+          <!-- ancora -->
+          <a name="port"><p>Portfolio</p></a>
+          <div class="portfolio ">
+            <div class="pic"><img src="foto1.jpg" alt="" /></div>
+            <div class="pic"><img src="foto1.jpg" alt="" /></div>
+            <div class="pic"><img src="foto1.jpg" alt="" /></div>
+            <div class="pic"><img src="foto1.jpg" alt="" /></div>
+            <div class="pic"><img src="foto1.jpg" alt="" /></div>
+            <div class="pic"><img src="foto1.jpg" alt="" /></div>
+            <div class="pic"><img src="foto1.jpg" alt="" /></div>
+            <div class="pic"><img src="foto1.jpg" alt="" /></div>
+          </div>
+        </div>
+        <!-- colonna google maps -->
+        <div class="column float-left">
+          <!-- ancora -->
+          <a name="dove"><p>Dove siamo</p></a>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2962.4728480590284!2d12.401126515407453!3d42.05448307920858!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f42dd5e6cf605:0xfcfda200926a78cb!2sGesca!5e0!3m2!1sit!2sit!4v1636359003156!5m2!1sit!2sit"
+            width="100%"
+            height="92%"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+          ></iframe>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
