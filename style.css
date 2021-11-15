@@ -72,6 +72,9 @@ header {
 .burger {
   display: none;
 }
+.menucomparsa {
+  display: none;
+}
 /* nav menu style */
 #menu {
   list-style: none;
@@ -289,22 +292,14 @@ iframe {
     height: 60px;
     top: 0;
   }
-  .slice {
-    height: 3px;
-    width: 25px;
-    background-color: white;
-    margin-top: 5px;
-  }
-  .burger {
-    display: contents;
-  }
-  .menu {
-    margin-top: -12%;
-    margin-left: 100%;
+  .slide img {
+    height: 40%;
+    margin-top: 0px;
   }
   .linker {
     position: absolute;
     opacity: 1;
+    z-index: -10;
     padding-top: 20%;
     width: 89%;
     color: white;
@@ -312,47 +307,36 @@ iframe {
   .logo a span:hover {
     padding: 5px 20px;
   }
-  .menu:hover ~ .burger {
-    visibility: visible;
-  }
-  .menu-comparsa ul {
+  .burger{
     display: block;
-    border: black;
-    border-style: solid;
-    border-width: 1px;
-    color: black;
-    margin-top: -1%;
-    height: 100%;
+    margin:65%;
   }
-  .menu-comparsa {
-    opacity: 0;
-    background-color: rgba(0, 0, 0, 0.8);
+  .burgerslice{
+    width: 25px;
+    height: 3px;
+    margin-top:6px;
+    background-color: white;
+  }
+  .menucomparsa{
+    position: sticky;
     width: 100vw;
     height: 100vh;
-    color: black;
-  }
-  .menu-comparsa ul li {
-    height: 15%;
-    margin: 0 20% 0;
-    list-style: none;
-    font-size: 40px;
-  }
-  .menu:hover ~ .menu-comparsa,
-  .menu:hover ~ .menu-comparsa ul li a,
-  .menu-comparsa:hover .menu-comparsa {
-    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.8);
+    font-size:35px;
+    text-align: center;
+
   }
 
-  .menu {
-    position: absolute;
-    width: 0px;
-    margin-top: -10.5%;
-    margin-left: 90vw;
+  .burger:hover ~.menucomparsa .linker{
+    z-index: 100;
+  }
+  .burger:hover ~ .menucomparsa{
+    display: block;
   }
   .contenitore-slider {
     height: 40%;
   }
-  .slide img {
+  .menucomparsa .slide img {
     height: 48%;
     margin-top: -50px;
   }
@@ -447,19 +431,6 @@ iframe {
     height: 60px;
     top: 0;
   }
-  .slice {
-    height: 3px;
-    width: 25px;
-    background-color: white;
-    margin-top: 5px;
-  }
-  .burger {
-    display: contents;
-  }
-  .menu {
-    margin-top: -12%;
-    margin-left: 100%;
-  }
   .linker {
     position: absolute;
     opacity: 1;
@@ -469,43 +440,6 @@ iframe {
   }
   .logo a span:hover {
     padding: 5px 20px;
-  }
-  .menu:hover ~ .burger {
-    visibility: visible;
-  }
-  .menu-comparsa ul {
-    display: block;
-    border: black;
-    border-style: solid;
-    border-width: 1px;
-    color: black;
-    margin-top: -1%;
-    height: 100%;
-  }
-  .menu-comparsa {
-    opacity: 0;
-    background-color: rgba(0, 0, 0, 0.8);
-    width: 100vw;
-    height: 100vh;
-    color: black;
-  }
-  .menu-comparsa ul li {
-    height: 15%;
-    margin: 0 20% 0;
-    list-style: none;
-    font-size: 40px;
-  }
-  .menu:hover ~ .menu-comparsa,
-  .menu:hover ~ .menu-comparsa ul li a,
-  .menu-comparsa:hover .menu-comparsa {
-    opacity: 1;
-  }
-
-  .menu {
-    position: absolute;
-    width: 0px;
-    margin-top: -10.5%;
-    margin-left: 90vw;
   }
   .contenitore-slider {
     height: 45%;
