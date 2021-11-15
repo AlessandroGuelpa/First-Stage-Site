@@ -16,7 +16,7 @@ header {
   width: 100%;
   z-index: 1000;
 }
-.navigator{
+.navigator {
   display: none;
 }
 /*  */
@@ -284,7 +284,7 @@ iframe {
     height: 60px;
     line-height: 60px;
   }
-  .navigator{
+  .navigator {
     display: block;
   }
   .menu {
@@ -305,26 +305,22 @@ iframe {
     display: block;
     width: 100%;
     text-decoration: none;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
   }
 
   .toggle {
     display: block;
     position: relative;
     cursor: pointer;
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
     user-select: none;
   }
 
   #toggle:checked ~ .menu {
     display: block;
     opacity: 1;
+    height: 100vh;
   }
   .menu {
-    background: rgba(0,0,0,0.8);
+    background: rgba(0, 0, 0, 0.8);
     border-top: 1px solid;
   }
 
@@ -332,8 +328,8 @@ iframe {
   .menu > li,
   .menu > li > a {
     height: auto;
-    color:white;
-    font-size:x-large;
+    color: white;
+    font-size: large;
   }
 
   .menu > li > a {
@@ -344,20 +340,12 @@ iframe {
     display: block;
     width: 60px;
     margin-right: 20px;
-    -webkit-border-radius: 2px;
     border-radius: 2px;
     text-align: center;
     font-size: 20px;
     color: #ffffff;
-    -webkit-transition: all 0.5s linear;
-    -moz-transition: all 0.5s linear;
-    -o-transition: all 0.5s linear;
     transition: all 0.5s linear;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
   }
-
   nav {
     height: 60px;
     top: 0;
@@ -461,7 +449,7 @@ iframe {
     height: 60px;
     line-height: 60px;
   }
-  .navigator{
+  .navigator {
     display: block;
   }
   .menu {
@@ -482,26 +470,22 @@ iframe {
     display: block;
     width: 100%;
     text-decoration: none;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
   }
 
   .toggle {
     display: block;
     position: relative;
     cursor: pointer;
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
     user-select: none;
   }
 
   #toggle:checked ~ .menu {
     display: block;
     opacity: 1;
+    height: 100vh;
   }
   .menu {
-    background: rgba(0,0,0,0.8);
+    background: rgba(0, 0, 0, 0.8);
     border-top: 1px solid;
   }
 
@@ -509,8 +493,8 @@ iframe {
   .menu > li,
   .menu > li > a {
     height: auto;
-    color:white;
-    font-size:x-large;
+    color: white;
+    font-size: large;
   }
 
   .menu > li > a {
@@ -521,20 +505,12 @@ iframe {
     display: block;
     width: 60px;
     margin-right: 20px;
-    -webkit-border-radius: 2px;
     border-radius: 2px;
     text-align: center;
     font-size: 20px;
     color: #ffffff;
-    -webkit-transition: all 0.5s linear;
-    -moz-transition: all 0.5s linear;
-    -o-transition: all 0.5s linear;
     transition: all 0.5s linear;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
   }
-
   nav {
     height: 60px;
     top: 0;
@@ -636,8 +612,8 @@ iframe {
     height: 60px;
     line-height: 60px;
   }
-  .navigator{
-   display:none;
+  .navigator {
+    display: none;
   }
   .orizzontal-menu {
     padding-right: 0px;
