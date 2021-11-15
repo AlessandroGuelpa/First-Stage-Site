@@ -52,8 +52,7 @@ header {
   padding-right: 20px;
 }
 /* menu nav style */
-.link,
-.linker {
+.link {
   text-decoration: none;
   color: white;
   padding-right: 25px;
@@ -61,8 +60,10 @@ header {
   border-right: 2px dotted transparent;
   transition: 0.4s;
 }
-.link:hover,
-.linker:hover {
+.linker {
+  color: black;
+}
+.link:hover {
   background-color: white;
   color: black;
   padding: 30px 20px;
@@ -162,7 +163,7 @@ header {
   display: inline-block;
 }
 .nascosto {
-  background-image: url("foto1.jpg");
+  background-image: url("img/foto1.jpg");
   background-repeat: no-repeat;
   text-align: center;
   width: 100%;
@@ -201,12 +202,6 @@ input[type="text"],
 input[type="email"] {
   width: 20%;
   font-size: x-large;
-}
-.sub {
-  opacity: 0;
-}
-input:checked + label .sub {
-  opacity: 1;
 }
 
 .article-block {
@@ -307,67 +302,62 @@ iframe {
     margin-top: -12%;
     margin-left: 100%;
   }
-  .menu-comparsa ul {
-    width: 32vh;
-  }
   .linker {
-    z-index: -10;
     position: absolute;
-    visibility: hidden;
     opacity: 1;
     padding: 2px;
+    width: 89%;
+    color:white;
   }
-
+  .logo a span:hover{
+    padding: 5px 20px;
+  }
   .menu:hover ~ .burger {
     visibility: visible;
   }
-  .menu:hover ~ .menu-comparsa {
-    visibility: visible;
-  }
-  .menu:hover ~ .menu-comparsa ul {
-    visibility: visible;
-  }
-  .menu:hover ~ .menu-comparsa ul li {
-    visibility: visible;
-  }
-  .menu:hover ~ .menu-comparsa ul li .linker {
-    display: block;
-    z-index: 10;
-    visibility: visible;
-  }
-  .menu:hover ~ .menu-comparsa ul li {
-    position: relative;
-    z-index: 10;
-  }
-  .menu-comparsa ul li {
+  .menu-comparsa ul {
     display: block;
     border: black;
     border-style: solid;
     border-width: 1px;
+    color: black;
+    margin-top: -1%;
+    height: 100%;
   }
   .menu-comparsa {
     opacity: 0;
-    background-color: #eea200;
-    line-height: 10vh;
-    margin-right: 50vw;
-    width: 32vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100vw;
+    height: 100vh;
+    color: black;
   }
-  .menu:hover ~ .menu-comparsa {
+  .menu-comparsa ul li {
+    height: 15%;
+    margin: 0 20% 0;
+    list-style: none;
+    font-size: 40px;
+  }
+  .menu:hover ~ .menu-comparsa,
+  .menu:hover ~ .menu-comparsa ul li a,
+  .menu-comparsa:hover .menu-comparsa {
     opacity: 1;
   }
+
   .menu {
     position: absolute;
     width: 0px;
+    margin-top: -10.5%;
+    margin-left: 80vw;
   }
   .contenitore-slider {
-    height: 45%;
+    height: 40%;
   }
   .slide img {
-    height: 52%;
+    height: 48%;
     margin-top: -50px;
   }
   #middle {
-    margin-top: -50vh;
+    margin-top: -55vh;
   }
   .box {
     margin: auto;
@@ -445,7 +435,7 @@ iframe {
   }
 }
 /* media query iphone 5 e android */
-@media only screen and (max-device-width: 375px) {
+@media only screen and (max-device-width: 374px) {
   .orizzontal-menu {
     display: none;
   }
