@@ -690,9 +690,9 @@ iframe {
     padding: 30px;
   }
   .column{
-    height: 65vh;
+    height: 90vh;
   }
   iframe{
-    height: 55vh;
+    height: 75vh;
   }
 }
