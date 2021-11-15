@@ -153,6 +153,7 @@ header {
 #middle {
   padding-top: 100vh;
 }
+/* style 3 colonne con foto prodotti */
 .box {
   width: 33%;
   height: 30vh;
@@ -200,6 +201,12 @@ input[type="text"],
 input[type="email"] {
   width: 20%;
   font-size: x-large;
+}
+.sub {
+  opacity: 0;
+}
+input:checked + label .sub {
+  opacity: 1;
 }
 
 .article-block {
@@ -249,7 +256,7 @@ input[type="email"] {
 }
 .column span {
   font-size: 20.5px;
-  padding:1px
+  padding: 1px;
 }
 iframe {
   height: 90%;
@@ -274,6 +281,7 @@ iframe {
   width: 100%;
   height: 100%;
 }
+/* media query iphone 6-7-8-x-11-12-13 */
 @media only screen and (min-device-width: 375px) and (max-device-width: 736px) {
   .orizzontal-menu {
     display: none;
@@ -436,6 +444,7 @@ iframe {
     width: 50%;
   }
 }
+/* media query iphone 5 e android */
 @media only screen and (max-device-width: 375px) {
   .orizzontal-menu {
     display: none;
@@ -601,6 +610,7 @@ iframe {
     width: 50%;
   }
 }
+/* media query ipad */
 @media only screen and (min-device-width: 736px) and (max-device-width: 1060px) {
   header {
     height: 60px;
@@ -653,7 +663,7 @@ iframe {
   }
   .column span {
     font-size: xx-large;
-    padding:50px;
+    padding: 50px;
   }
   .portfolio {
     overflow: auto;
