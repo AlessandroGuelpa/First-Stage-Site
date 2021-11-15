@@ -160,6 +160,7 @@ header {
   position: static;
   float: none;
   display: inline-block;
+  padding:10px;
 }
 .nascosto {
   background-image: url("img/foto1.jpg");
@@ -267,6 +268,7 @@ iframe {
   height: 80%;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-around;
 }
 .portfolio > div {
   width: 31%;
@@ -320,7 +322,7 @@ iframe {
     height: 100vh;
   }
   .menu {
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 1);
     border-top: 1px solid;
   }
 
@@ -369,7 +371,7 @@ iframe {
     margin: auto;
     display: block;
     width: 80vw;
-    margin-top: 10%;
+    margin-top: 18%;
     height: 20vh;
   }
   .nascosto span,
@@ -485,7 +487,7 @@ iframe {
     height: 100vh;
   }
   .menu {
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 1);
     border-top: 1px solid;
   }
 
@@ -533,7 +535,7 @@ iframe {
     margin: auto;
     display: block;
     width: 80vw;
-    margin-top: 10%;
+    margin-top: 17%;
     height: 25vh;
     padding-bottom: 10px;
   }
@@ -618,6 +620,9 @@ iframe {
   .orizzontal-menu {
     padding-right: 0px;
   }
+  .nascosto {
+    height: 80%;
+  }
   .logo a span:hover {
     background-color: white;
     padding: 5px 20px;
@@ -639,7 +644,12 @@ iframe {
   }
   .box {
     width: 32.5%;
-    height: 15vh;
+    height: 35vh;
+    display: block;
+    margin: auto;
+  }
+  .portfolio img{
+    padding:6px;
   }
   .article-block {
     height: 40%;
@@ -669,5 +679,14 @@ iframe {
   }
   .portfolio > div {
     width: 50%;
+  }
+}
+@media screen and (min-device-width:2000px){
+  .column span{
+    font-size: 50px;
+  }
+  .column p{
+    font-size: 60px;
+    padding:30px;
   }
 }
