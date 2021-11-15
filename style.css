@@ -305,11 +305,11 @@ iframe {
   .linker {
     position: absolute;
     opacity: 1;
-    padding: 2px;
+    padding-top: 20%;
     width: 89%;
-    color:white;
+    color: white;
   }
-  .logo a span:hover{
+  .logo a span:hover {
     padding: 5px 20px;
   }
   .menu:hover ~ .burger {
@@ -347,7 +347,7 @@ iframe {
     position: absolute;
     width: 0px;
     margin-top: -10.5%;
-    margin-left: 80vw;
+    margin-left: 90vw;
   }
   .contenitore-slider {
     height: 40%;
@@ -452,7 +452,6 @@ iframe {
     width: 25px;
     background-color: white;
     margin-top: 5px;
-    margin-left: -10px;
   }
   .burger {
     display: contents;
@@ -461,57 +460,52 @@ iframe {
     margin-top: -12%;
     margin-left: 100%;
   }
-  .menu-comparsa ul {
-    width: 32vh;
-  }
   .linker {
-    z-index: -10;
     position: absolute;
-    visibility: hidden;
     opacity: 1;
-    padding: 2px;
+    padding-top: 20%;
+    width: 89%;
+    color: white;
   }
-
+  .logo a span:hover {
+    padding: 5px 20px;
+  }
   .menu:hover ~ .burger {
     visibility: visible;
   }
-  .menu:hover ~ .menu-comparsa {
-    visibility: visible;
-  }
-  .menu:hover ~ .menu-comparsa ul {
-    visibility: visible;
-  }
-  .menu:hover ~ .menu-comparsa ul li {
-    visibility: visible;
-  }
-  .menu:hover ~ .menu-comparsa ul li .linker {
-    display: block;
-    z-index: 10;
-    visibility: visible;
-  }
-  .menu:hover ~ .menu-comparsa ul li {
-    position: relative;
-    z-index: 10;
-  }
-  .menu-comparsa ul li {
+  .menu-comparsa ul {
     display: block;
     border: black;
     border-style: solid;
     border-width: 1px;
+    color: black;
+    margin-top: -1%;
+    height: 100%;
   }
   .menu-comparsa {
     opacity: 0;
-    background-color: #eea200;
-    line-height: 10vh;
-    margin-right: 50vw;
-    width: 32vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100vw;
+    height: 100vh;
+    color: black;
   }
-  .menu:hover ~ .menu-comparsa {
+  .menu-comparsa ul li {
+    height: 15%;
+    margin: 0 20% 0;
+    list-style: none;
+    font-size: 40px;
+  }
+  .menu:hover ~ .menu-comparsa,
+  .menu:hover ~ .menu-comparsa ul li a,
+  .menu-comparsa:hover .menu-comparsa {
     opacity: 1;
   }
+
   .menu {
     position: absolute;
     width: 0px;
+    margin-top: -10.5%;
+    margin-left: 90vw;
   }
   .contenitore-slider {
     height: 45%;
