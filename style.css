@@ -446,10 +446,11 @@ input:checked + label .sub {
   }
   .portfolio {
     overflow: auto;
-    height: 93%;
+    height: 89%;
   }
   .portfolio > div {
     width: 50%;
+    height: 40%;
   }
 }
 /* media query iphone 5 e android */
@@ -623,10 +624,11 @@ input:checked + label .sub {
   }
   .portfolio {
     overflow: auto;
-    height: 93%;
+    height: 88%;
   }
   .portfolio > div {
     width: 50%;
+    height: 40%;
   }
 }
 /* media query ipad */
@@ -722,7 +724,7 @@ input:checked + label .sub {
     height: 20vh;
   }
   iframe {
-    height: 40vh;
+    height: 35vh;
   }
   .column p{
     font-size: 30px;
