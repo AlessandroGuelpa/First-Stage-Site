@@ -208,7 +208,7 @@ input[type="email"] {
 .article h1 {
   width: 100%;
   height: 100%;
-  margin-top: 250px;
+  margin-top: 25vh;
   font-size: 70px;
 }
 .article img {
@@ -217,7 +217,7 @@ input[type="email"] {
 }
 .information {
   width: 30%;
-  margin: 1000px auto 10%;
+  margin: 100vh auto 10%;
   text-align: center;
   font-size: 40px;
   border-style: solid;
@@ -260,6 +260,7 @@ iframe {
 }
 .portfolio > div {
   width: 31%;
+  height: 19vh;
 }
 .portfolio img {
   width: 100%;
@@ -712,6 +713,9 @@ input:checked + label .sub {
     width: 90px;
   }
   .information {
-    margin-top: 50%;
+    margin-top: 100vh;
+  }
+  .article h1{
+    font-size: 120px;
   }
 }
