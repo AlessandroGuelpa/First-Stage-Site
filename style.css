@@ -177,16 +177,16 @@ header {
   font-size: 15px;
 }
 .form {
-  font-size: xx-large;
+  font-size: 30px;
 }
 input[type="submit"] {
   width: 10%;
-  font-size: x-large;
+  font-size: 20px;
 }
 input[type="text"],
 input[type="email"] {
   width: 20%;
-  font-size: x-large;
+  font-size: 20px;
 }
 
 .article-block {
@@ -231,12 +231,14 @@ input[type="email"] {
 .footer {
   text-align: center;
   margin-top: 6%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 .column {
-  height: 80vh;
-  border-style: solid;
-  width: 33.3%;
-  line-height: 30px;
+  height: 50vh;
+  width: 25%;
+  
 }
 .column span {
   font-size: 20.5px;
@@ -250,7 +252,8 @@ iframe {
   margin: auto;
 }
 .column p {
-  font-size: xx-large;
+  font-size: 30px;
+  padding:10px;
 }
 .portfolio {
   width: 100%;
@@ -260,7 +263,7 @@ iframe {
 }
 .portfolio > div {
   width: 31%;
-  height: 19vh;
+  height: 10vh;
 }
 .portfolio img {
   width: 100%;
@@ -330,8 +333,9 @@ input:checked + label .sub {
   .menu > li > a {
     height: auto;
     color: white;
-    font-size: large;
+    font-size: 20px;
     margin-top: 20px;
+    line-height: 10px;
   }
 
   .menu > li > a {
@@ -384,7 +388,7 @@ input:checked + label .sub {
     margin-top: 80px;
   }
   .form {
-    font-size: large;
+    font-size: 20px;
   }
   .form-contatti {
     margin: 20% auto;
@@ -392,7 +396,7 @@ input:checked + label .sub {
   input[type="text"],
   input[type="email"] {
     width: 50%;
-    font-size: x-large;
+    font-size: 15px;
   }
   input[type="submit"] {
     width: 30%;
@@ -418,6 +422,10 @@ input:checked + label .sub {
   .information {
     margin: 600px auto 10%;
     width: 80%;
+
+  }
+  .info ul li{
+    font-size: 20px;
   }
   .footer {
     display: flex;
@@ -426,12 +434,15 @@ input:checked + label .sub {
   .column {
     width: 100%;
     margin-bottom: 0px;
+    border-style: solid;
+    margin-top:10%;
+    height: 70vh;
   }
   .column #loghetto {
     width: 50%;
   }
   .column span {
-    font-size: large;
+    font-size: 20px;
   }
   .portfolio {
     overflow: auto;
@@ -476,6 +487,8 @@ input:checked + label .sub {
     display: block;
     width: 100%;
     text-decoration: none;
+    line-height: 10px;
+
   }
 
   .toggle {
@@ -500,7 +513,7 @@ input:checked + label .sub {
   .menu > li > a {
     height: auto;
     color: white;
-    font-size: large;
+    font-size: 20px;
     margin-top: 20px;
   }
 
@@ -552,7 +565,7 @@ input:checked + label .sub {
     margin-top: 100px;
   }
   .form {
-    font-size: large;
+    font-size: 20px;
   }
   .form-contatti {
     margin: 20% auto;
@@ -560,7 +573,7 @@ input:checked + label .sub {
   input[type="text"],
   input[type="email"] {
     width: 50%;
-    font-size: x-large;
+    font-size: 20px;
   }
   input[type="submit"] {
     width: 30%;
@@ -598,13 +611,15 @@ input:checked + label .sub {
   .column {
     width: 100%;
     margin-bottom: 0px;
-    height: 60vh;
+    border-style: solid;
+    margin-top:10%;
+    height: 75vh;
   }
   .column #loghetto {
     width: 50%;
   }
   .column span {
-    font-size: large;
+    font-size: 20px;
   }
   .portfolio {
     overflow: auto;
@@ -684,7 +699,7 @@ input:checked + label .sub {
     width: 50%;
   }
   .column span {
-    font-size: xx-large;
+    font-size: 40px;
     padding: 50px;
   }
   .portfolio {
@@ -697,17 +712,20 @@ input:checked + label .sub {
 }
 @media screen and (min-device-width: 1920px) {
   .column span {
-    font-size: 50px;
+    font-size: 20px;
   }
   .column p {
     font-size: 60px;
     padding: 30px;
   }
   .column {
-    height: 100vh;
+    height: 20vh;
   }
   iframe {
-    height: 75vh;
+    height: 40vh;
+  }
+  .column p{
+    font-size: 30px;
   }
   .logo {
     width: 90px;
@@ -716,6 +734,7 @@ input:checked + label .sub {
     margin-top: 100vh;
   }
   .article h1{
-    font-size: 120px;
+    font-size: 60px;
+    margin-top:300px;
   }
 }
