@@ -18,7 +18,7 @@
       <div class="header">
         <!-- Logo -->
         <div class="logo float-left">
-          <a href="#"><span>Scarpe</span></a>
+          <a href="#" class="l"><img src="img/logo.jpg" alt="logo" /></a>
         </div>
       </div>
       <!-- Nav-Bar -->
@@ -35,13 +35,21 @@
           </div>
           <!-- menu nascosto -->
           <div class="navigator">
-            <input type="checkbox" style="display: none;" id="toggle" />
-            <label for="toggle" class="toggle" onclick></label>
+            <input type="checkbox" style="display: none" id="toggle" />
+            <label for="toggle" class="toggle" onclick
+              ><div class="slice"></div
+            ></label>
+            <label for="toggle" class="toggle" onclick
+              ><div class="slice"></div
+            ></label>
+            <label for="toggle" class="toggle" onclick
+              ><div class="slice"></div
+            ></label>
             <ul class="menu">
               <li><a href="#noi" class="">Un po' di noi</a></li>
               <li><a href="#info" class="">Info</a></li>
-              <li><a href="#port" class="">Dove siamo</a></li>
-              <li><a href="#dove" class="">Portfolio</a></li>
+              <li><a href="#dove" class="">Dove siamo</a></li>
+              <li><a href="#port" class="">Portfolio</a></li>
             </ul>
           </div>
         </nav>
@@ -126,9 +134,8 @@
         <!-- blocco con prezzo -->
         <div class="article float-right">
           <h1>
-            <s><b style="filter: invert(100%)">$129.99</b></s
-            ><br />
-            <b style="color: red">$80.99</b>
+            <s><p>$129.99</p></s>
+            <p class="red">$80.99</p>
           </h1>
         </div>
       </div>
@@ -178,7 +185,7 @@
         <div class="column float-left">
           <!-- ancora -->
           <a name="noi"><p>Un po' di noi</p></a><br />
-          <img id="loghetto" src="foto1.jpg" alt="" /><br />
+          <img id="loghetto" src="/img/logo.jpg" alt="" /><br />
           <span>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit.
             Laudantium, soluta! Nulla in deserunt ullam ducimus quidem
