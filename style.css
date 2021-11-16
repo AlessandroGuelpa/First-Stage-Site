@@ -219,7 +219,7 @@ input[type="email"] {
   width: 30%;
   margin: 100vh auto 10%;
   text-align: center;
-  font-size: 40px;
+  font-size: 30px;
   border-style: solid;
 }
 .info ul li {
@@ -717,26 +717,31 @@ input:checked + label .sub {
     font-size: 20px;
   }
   .column p {
-    font-size: 60px;
-    padding: 30px;
+    font-size: 30px;
+    padding: 20px;
   }
   .column {
     height: 20vh;
   }
   iframe {
-    height: 35vh;
-  }
-  .column p{
-    font-size: 30px;
+    height: 30vh;
   }
   .logo {
     width: 90px;
   }
+  input[type="text"],
+input[type="email"] {
+  width: 10%;
+  font-size: 20px;
+}
   .information {
     margin-top: 100vh;
   }
   .article h1{
     font-size: 60px;
     margin-top:300px;
+  }
+  .form{
+    font-size:25px;
   }
 }
