@@ -28,7 +28,7 @@ window.addEventListener("resize", () => (width = carousel.offsetWidth));
 var array = [];
 for (var i = 0; i < 10; i++) {
   array.push(document.getElementsByClassName("item")[i].getAttribute("value"));
-  console.log(document.getElementByClassName("item")[i].getAttribute("value"));
+  console.log(document.getElementsByClassName("item")[i].getAttribute("value"));
   if (array[i] < 10) {
     document.getElementsByClassName("new")[i].style.visibility = "visible";
   } else {
