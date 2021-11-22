@@ -1,5 +1,4 @@
 const gap = 9;
-document.addEventListener("touchstart", onTouchStart, { passive: true });
 const carousel = document.getElementById("carousel"),
   content = document.getElementById("content"),
   next = document.getElementById("next"),
