@@ -6,6 +6,86 @@
   font-family: "Raleway";
   scroll-padding-top: 9rem;
 }
+#wrapper {
+  width: 100%;
+  max-width: 100%;
+  position: relative;
+}
+
+#carousel {
+  overflow: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+
+#carousel::-webkit-scrollbar {
+  height: 0;
+}
+
+#prev,
+#next {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  background: rgba(0, 0, 0, 0.9);
+  border: none;
+  padding: 8px;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  outline: 0;
+  cursor: pointer;
+  position: absolute;
+}
+
+#prev {
+  top: 50%;
+  left: 0;
+  transform: translate(50%, -50%);
+  display: none;
+}
+
+#next {
+  top: 50%;
+  right: 0;
+  transform: translate(-50%, -50%);
+}
+
+#content {
+  display: grid;
+  grid-gap: 16px;
+  grid-auto-flow: column;
+  margin: auto;
+  box-sizing: border-box;
+}
+
+.item {
+  width: 180px;
+  height: 180px;
+  background: green;
+}
+.scritta {
+  width: 180px;
+  margin-left: -12.25em;
+  display: inline-block;
+}
+.new {
+  background-color: rgba(0, 0, 0, 0.6);
+  height: 20px;
+  width: 50px;
+  color: white;
+  visibility: hidden;
+}
+.sold {
+  background-color: rgba(0, 0, 0, 0.6);
+  height: 20px;
+  width: 50px;
+  color: white;
+  visibility: hidden;
+}
+.blocco-ulteriore {
+  margin-top: 100px;
+}
 /* header */
 header {
   position: sticky;
@@ -238,7 +318,6 @@ input[type="email"] {
 .column {
   height: 50vh;
   width: 25%;
-  
 }
 .column span {
   font-size: 20.5px;
@@ -253,7 +332,7 @@ iframe {
 }
 .column p {
   font-size: 30px;
-  padding:10px;
+  padding: 10px;
 }
 .portfolio {
   width: 100%;
@@ -279,6 +358,15 @@ input:checked + label .sub {
 @media only screen and (min-device-width: 375px) and (max-device-width: 736px) {
   .orizzontal-menu {
     display: none;
+  }
+  .contenitore-middle {
+    margin: 0 1%;
+  }
+  #content {
+    grid-gap: 4px;
+  }
+  .scritta {
+    margin-left: -11.5em;
   }
   header {
     height: 60px;
@@ -422,9 +510,8 @@ input:checked + label .sub {
   .information {
     margin: 600px auto 10%;
     width: 80%;
-
   }
-  .info ul li{
+  .info ul li {
     font-size: 20px;
   }
   .footer {
@@ -435,7 +522,7 @@ input:checked + label .sub {
     width: 100%;
     margin-bottom: 0px;
     border-style: solid;
-    margin-top:10%;
+    margin-top: 10%;
     height: 70vh;
   }
   .column #loghetto {
@@ -457,6 +544,25 @@ input:checked + label .sub {
 @media only screen and (max-device-width: 374px) {
   .orizzontal-menu {
     display: none;
+  }
+  .contenitore-middle {
+    margin: 0 1%;
+  }
+  #content {
+    grid-gap: 5px;
+  }
+  .scritta {
+    width: 160px;
+    margin-left: -10.3em;
+  }
+  .item {
+    width: 160px;
+    height: 160px;
+  }
+  #next,
+  #prev {
+    width: 25px;
+    height: 25px;
   }
   header {
     height: 60px;
@@ -489,7 +595,6 @@ input:checked + label .sub {
     width: 100%;
     text-decoration: none;
     line-height: 10px;
-
   }
 
   .toggle {
@@ -613,7 +718,7 @@ input:checked + label .sub {
     width: 100%;
     margin-bottom: 0px;
     border-style: solid;
-    margin-top:10%;
+    margin-top: 10%;
     height: 75vh;
   }
   .column #loghetto {
@@ -633,6 +738,15 @@ input:checked + label .sub {
 }
 /* media query ipad */
 @media only screen and (min-device-width: 736px) and (max-device-width: 1024px) {
+  .contenitore-middle{
+    margin: 0 1%
+  }
+  #content{
+    grid-gap: 5px;
+  }
+  .scritta{
+    margin-left:-11.55em;
+  }
   header {
     height: 60px;
     line-height: 60px;
@@ -730,18 +844,18 @@ input:checked + label .sub {
     width: 90px;
   }
   input[type="text"],
-input[type="email"] {
-  width: 10%;
-  font-size: 20px;
-}
+  input[type="email"] {
+    width: 10%;
+    font-size: 20px;
+  }
   .information {
     margin-top: 100vh;
   }
-  .article h1{
+  .article h1 {
     font-size: 60px;
-    margin-top:300px;
+    margin-top: 300px;
   }
-  .form{
-    font-size:25px;
+  .form {
+    font-size: 25px;
   }
 }
