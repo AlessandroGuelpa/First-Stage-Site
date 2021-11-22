@@ -368,6 +368,10 @@ input:checked + label .sub {
   .scritta {
     margin-left: -11.5em;
   }
+  #next,
+  #prev {
+    display: none;
+  }
   header {
     height: 60px;
     line-height: 60px;
@@ -561,8 +565,7 @@ input:checked + label .sub {
   }
   #next,
   #prev {
-    width: 25px;
-    height: 25px;
+    display: none;
   }
   header {
     height: 60px;
