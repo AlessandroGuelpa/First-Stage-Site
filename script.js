@@ -41,7 +41,8 @@ window.addEventListener("resize", () => (width = carousel.offsetWidth));
 // creazione array
 var array = [];
 // ciclo da 0 a 9
-for (var i = 0; i < 10; i++) {
+var i = 0
+for (i; i < 10; i++) {
   // spingi nell'array il valore della classe "item"
   console.log(document.getElementsByClassName("item")[i].getAttribute("value"));
   array.push(document.getElementsByClassName("item")[i].getAttribute("value"));
