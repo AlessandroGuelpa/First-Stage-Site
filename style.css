@@ -232,7 +232,7 @@ header {
   bottom: 0;
   text-align: center;
 }
-.animation{
+.animation {
   animation-name: animazione;
   animation-duration: 2.5s;
 }
@@ -247,11 +247,17 @@ header {
 .bullet {
   width: 15px;
   height: 15px;
-  border-radius: 100%;
   background-color: white;
   display: inline-block;
   margin-right: 8px;
-  opacity: 0.7;
+  transform-origin: center;
+  transform: rotate(0);
+  transition: all ease 0.3s;
+}
+.bullet:hover {
+  transform: rotate(45deg);
+  width: 16px;
+  height: 16px;
 }
 #middle {
   padding-top: 100vh;
