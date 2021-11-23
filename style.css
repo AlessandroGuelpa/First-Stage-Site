@@ -234,6 +234,7 @@ header {
 }
 .animation{
   animation-name: animazione;
+  animation-duration: 2s;
 }
 @keyframes animazione {
   from {
