@@ -213,7 +213,7 @@ header {
 }
 .wrapper {
   width: 500vw;
-  animation: slide 20s ease infinite;
+  /* animation: slide 20s ease infinite; */
 }
 .slide {
   float: left;
@@ -242,7 +242,7 @@ header {
   opacity: 0.7;
 }
 /* slider effect */
-@keyframes slide {
+/* @keyframes slide {
   20% {
     margin-left: -0vw;
   }
@@ -264,7 +264,7 @@ header {
   90% {
     margin-left: -300vw;
   }
-}
+} */
 #middle {
   padding-top: 100vh;
 }
