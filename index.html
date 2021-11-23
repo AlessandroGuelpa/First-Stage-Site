@@ -3,6 +3,12 @@
   <head>
     <title>Scarpe</title>
     <link rel="stylesheet" href="style.css" type="text/css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+
     <link rel="icon" href="img/logo.webp" type="image/x-icon" />
     <link
       href="https://fonts.googleapis.com/css?family=Raleway&display=swap"
@@ -72,29 +78,29 @@
       <!-- contenitore principale -->
       <div class="contenitore-slider">
         <!-- slider contenente sia immagini che bullet (bullet sopra immagini, posizionato in basso) -->
-        <div class="slider">
+        <div class="slideshow">
           <!-- div immagini -->
-          <div class="wrapper">
-            <div class="slide animation">
+          <div class="slick">
+            <div>
               <img src="img/foto1.webp" alt="immagine" value="1" />
             </div>
-            <div class="slide animation">
+            <div>
               <img src="img/foto.webp" alt="immagine" value="2" />
             </div>
-            <div class="slide animation">
+            <div>
               <img src="img/immagine.webp" alt="immagine" value="3" />
             </div>
-            <div class="slide animation">
+            <div>
               <img src="img/sfondo.webp" alt="immagine" value="4" />
             </div>
           </div>
-          <!-- div bullet -->
+          <!-- div bullet
           <div class="bottom">
             <div class="bullet" onclick="" value="1"></div>
             <div class="bullet" onclick="" value="2"></div>
             <div class="bullet" onclick="" value="3"></div>
             <div class="bullet" onclick="" value="4"></div>
-          </div>
+          </div> -->
         </div>
       </div>
     </section>
@@ -380,5 +386,26 @@
   </body>
   <script src="script.js"></script>
   <script src="slider.js"></script>
-  <!--  -->
+  <script
+    type="text/javascript"
+    src="//code.jquery.com/jquery-1.11.0.min.js"
+  ></script>
+
+  <script
+    type="text/javascript"
+    src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+  ></script>
+  <script
+    type="text/javascript"
+    src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+  ></script>
+  <script>
+    $(document).ready(() => {
+      $(".slideshow .slick").slick({
+        autoplay: true,
+
+        infinite: true,
+      });
+    });
+  </script>
 </html>
