@@ -323,8 +323,8 @@ input[type="email"] {
   font-size: 20.5px;
   padding: 1px;
 }
-iframe {
-  height: 90%;
+.iframe{
+  width: 100%;
 }
 .column #loghetto {
   width: 35%;
@@ -419,7 +419,6 @@ input:checked + label .sub {
     background: rgba(0, 0, 0, 1);
     border-top: 1px solid;
   }
-
   .menu,
   .menu > li,
   .menu > li > a {
@@ -839,9 +838,6 @@ input:checked + label .sub {
   }
   .column {
     height: 20vh;
-  }
-  iframe {
-    height: 30vh;
   }
   .logo {
     width: 90px;
