@@ -1,5 +1,4 @@
 var slideIndex = 0;
-var bullet = document.getElementsByClassName("bullet").getAttribute("value");
 
 showSlides();
 
