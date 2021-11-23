@@ -47,7 +47,7 @@ for (var i = 0; i < 10; i++) {
   // se il valore nella posizione "i" nell'array è minore di 10
   if (array[i] < 10) {
     // rendi visibile l'elemento "new"
-    ocument.getElementsByClassName("new")[i].style.visibility = "visible";
+    document.getElementsByClassName("new")[i].style.visibility = "visible";
     // altrimenti se il valore è maggiore/uguale a 10
   } else {
     // rendi visibile l'elemento "sold"
