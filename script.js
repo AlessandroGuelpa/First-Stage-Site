@@ -51,6 +51,6 @@ for (var i = 0; i < 10; i++) {
     // altrimenti se il valore è maggiore/uguale a 10
   } else {
     // rendi visibile l'elemento "sold"
-    document.getElementsById("sold").style.visible="visible";
+    document.getElementById("sold").style.visible="visible";
   }
 }
