@@ -3,6 +3,7 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "Raleway";
+  font-display: "swap";
   scroll-padding-top: 9rem;
 }
 #wrapper {
