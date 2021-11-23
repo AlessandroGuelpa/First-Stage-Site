@@ -234,11 +234,11 @@ header {
 }
 .animation{
   animation-name: animazione;
-  animation-duration: 2s;
+  animation-duration: 2.5s;
 }
 @keyframes animazione {
   from {
-    opacity: 0.3;
+    opacity: 0;
   }
   to {
     opacity: 1;
