@@ -232,6 +232,17 @@ header {
   bottom: 0;
   text-align: center;
 }
+.animation{
+  animation-name: animazione;
+}
+@keyframes animazione {
+  from {
+    opacity: 0.3;
+  }
+  to {
+    opacity: 1;
+  }
+}
 .bullet {
   width: 15px;
   height: 15px;
