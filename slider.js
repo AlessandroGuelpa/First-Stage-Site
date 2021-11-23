@@ -1,4 +1,6 @@
 var slideIndex = 0;
+var bullet = document.getElementsByClassName("bullet").getAttribute("value");
+
 showSlides();
 
 function showSlides() {
@@ -13,4 +15,18 @@ function showSlides() {
   }
   slide[slideIndex - 1].style.display = "block";
   setTimeout(showSlides, 4000);
+}
+document.getElementsByClassName("bullet").onclick = function(){
+  if(bullet == 1){
+    slideIndex = 0;
+  }
+  if(bullet == 2){
+    slideIndex = 1;
+  }
+  if(bullet == 3){
+    slideIndex = 2;
+  }
+  if(bullet == 4){
+    slideIndex = 3;
+  }
 }
