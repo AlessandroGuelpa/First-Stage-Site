@@ -8,6 +8,7 @@
       href="https://fonts.googleapis.com/css?family=Raleway&display=swap"
       rel="stylesheet"
     />
+    <link rel="preload" as="style" href="style.css" />
     <link rel="apple-touch-icon" href="/example.png" />
     <meta name="theme-color" content="#317EFB" />
     <meta name="description" content="page" />
@@ -21,7 +22,9 @@
       <div class="header">
         <!-- Logo -->
         <div class="logo float-left">
-          <a href="#" class="l"><img src="img/logo.webp" alt="logo" /></a>
+          <a href="#" class="l"
+            ><img src="img/logo.webp" alt="logo" loading="lazy"
+          /></a>
         </div>
       </div>
       <!-- Nav-Bar -->
@@ -67,24 +70,44 @@
           <!-- div immagini -->
           <div class="wrapper">
             <div class="slide">
-              <img src="img/foto1.webp" alt="immagine" loading="lazy" />
+              <img
+                src="img/foto1.webp"
+                alt="immagine"
+                loading="lazy"
+                value="1"
+              />
             </div>
             <div class="slide">
-              <img src="img/foto.webp" alt="immagine" loading="lazy" />
+              <img
+                src="img/foto.webp"
+                alt="immagine"
+                loading="lazy"
+                value="2"
+              />
             </div>
             <div class="slide">
-              <img src="img/immagine.webp" alt="immagine" />
+              <img
+                src="img/immagine.webp"
+                alt="immagine"
+                loading="lazy"
+                value="3"
+              />
             </div>
             <div class="slide">
-              <img src="img/sfondo.webp" alt="immagine" />
+              <img
+                src="img/sfondo.webp"
+                alt="immagine"
+                loading="lazy"
+                value="4"
+              />
             </div>
           </div>
           <!-- div bullet -->
           <div class="bottom">
-            <div class="bullet"></div>
-            <div class="bullet"></div>
-            <div class="bullet"></div>
-            <div class="bullet"></div>
+            <div class="bullet" onclick="changeimg()" value="1"></div>
+            <div class="bullet" onclick="" value="2"></div>
+            <div class="bullet" onclick="" value="3"></div>
+            <div class="bullet" onclick="" value="4"></div>
           </div>
         </div>
       </div>
@@ -361,4 +384,5 @@
     </footer>
   </body>
   <script src="script.js"></script>
+  <!-- <script src="bullet.js"></script> -->
 </html>
