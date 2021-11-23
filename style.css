@@ -241,30 +241,6 @@ header {
   margin-right: 8px;
   opacity: 0.7;
 }
-/* slider effect */
-/* @keyframes slide {
-  20% {
-    margin-left: -0vw;
-  }
-  30% {
-    margin-left: -100vw;
-  }
-  50% {
-    margin-left: -100vw;
-  }
-  60% {
-    margin-left: -200vw;
-  }
-  70% {
-    margin-left: -200vw;
-  }
-  80% {
-    margin-left: -300vw;
-  }
-  90% {
-    margin-left: -300vw;
-  }
-} */
 #middle {
   padding-top: 100vh;
 }
