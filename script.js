@@ -47,10 +47,10 @@ for (var i = 0; i < 10; i++) {
   // se il valore nella posizione "i" nell'array è minore di 10
   if (array[i] < 10) {
     // rendi visibile l'elemento "new"
-    document.getElementById("new")[i].setAttribute("style","visibility = visible");
+    document.getElementByClass("new")[i].setAttribute("style","visibility = visible");
     // altrimenti se il valore è maggiore/uguale a 10
   } else {
     // rendi visibile l'elemento "sold"
-    document.getElementById("sold")[i].style.visible="visible";
+    document.getElementByClass("sold")[i].style.visible="visible";
   }
 }
