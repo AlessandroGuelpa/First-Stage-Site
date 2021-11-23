@@ -39,13 +39,12 @@ let width = carousel.offsetWidth;
 // quando la finestra viene deformata, salva la larghezza nella variabile
 window.addEventListener("resize", () => (width = carousel.offsetWidth));
 // creazione array
-windows.onload = function(){
-  var array = [];
+var array = [];
 // ciclo da 0 a 9
 for (var i = 0; i < 10; i++) {
   // spingi nell'array il valore della classe "item"
-  array.push(document.getElementsByClassName("item")[i].getAttribute("value"));
   console.log(document.getElementsByClassName("item")[i].getAttribute("value"));
+  array.push(document.getElementsByClassName("item")[i].getAttribute("value"));
   // se il valore nella posizione "i" nell'array è minore di 10
   if (array[i] < 10) {
     // rendi visibile l'elemento "new"
@@ -56,7 +55,7 @@ for (var i = 0; i < 10; i++) {
     document.getElementsByClassName("sold")[i].style.visibility = "visible";
   }
 }
-}
+
 // var array = [];
 // // ciclo da 0 a 9
 // for (var i = 0; i < 10; i++) {
