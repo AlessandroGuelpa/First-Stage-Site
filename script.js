@@ -6,7 +6,7 @@ const carousel = document.getElementById("carousel"),
   next = document.getElementById("next"),
   prev = document.getElementById("prev");
 // quando clicco sul tasto next:
-next.addEventListener("click", () => {
+next.addEventListener("click", (event) => {
   // cambiano le coordinate di x (larghezza + gap(9)), la y è 0
   carousel.scrollBy(width + gap, 0);
   // se la x è diversa da 0 visualizza il tasto per andare alla x precendente
@@ -19,7 +19,7 @@ next.addEventListener("click", () => {
   }
 });
 // quando clicco sul tasto prev:
-prev.addEventListener("click", () => {
+prev.addEventListener("click", (event) => {
   // le coordinate di x vanno a larghezza - gap
   carousel.scrollBy(-(width + gap), 0);
   // se la x - la grandezza dello schermo - il gap è minore/uguale allo 0(cioè il punto piu a sinistra sulla pagina):
