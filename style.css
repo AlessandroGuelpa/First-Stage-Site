@@ -790,12 +790,18 @@ input:checked + label .sub {
   #content {
     grid-gap: 5px;
   }
+  .form-contatti{
+    margin: 0 auto;
+  }
   .scritta {
     margin-left: -11.55em;
   }
   header {
     height: 60px;
     line-height: 60px;
+  }
+  .article h1{
+    margin-top: 11vh;;
   }
   .logo {
     width: 60px;
@@ -842,7 +848,7 @@ input:checked + label .sub {
     color: red;
   }
   .information {
-    margin: 65% auto 10%;
+    margin: 85vh auto 2%;
     width: 70%;
   }
   .footer {
@@ -851,7 +857,7 @@ input:checked + label .sub {
   }
   .column {
     width: 60%;
-    height: 60vh;
+    height: 100%;
     margin: auto;
     margin-bottom: 0px;
   }
@@ -859,7 +865,7 @@ input:checked + label .sub {
     width: 50%;
   }
   .column span {
-    font-size: 40px;
+    font-size: 30px;
     padding: 50px;
   }
   .portfolio {
@@ -868,6 +874,7 @@ input:checked + label .sub {
   }
   .portfolio > div {
     width: 50%;
+    height: 25vh;
   }
 }
 @media screen and (min-device-width: 1920px) {
