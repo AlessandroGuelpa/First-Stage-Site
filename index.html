@@ -8,6 +8,11 @@
       type="text/css"
       href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
     />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
 
     <link rel="icon" href="img/logo.webp" type="image/x-icon" />
     <link
@@ -94,13 +99,6 @@
               <img src="img/sfondo.webp" alt="immagine" value="4" />
             </div>
           </div>
-          <!-- div bullet
-          <div class="bottom">
-            <div class="bullet" onclick="" value="1"></div>
-            <div class="bullet" onclick="" value="2"></div>
-            <div class="bullet" onclick="" value="3"></div>
-            <div class="bullet" onclick="" value="4"></div>
-          </div> -->
         </div>
       </div>
     </section>
@@ -385,7 +383,6 @@
     </footer>
   </body>
   <script src="script.js"></script>
-  <script src="slider.js"></script>
   <script
     type="text/javascript"
     src="//code.jquery.com/jquery-1.11.0.min.js"
@@ -403,8 +400,11 @@
     $(document).ready(() => {
       $(".slideshow .slick").slick({
         autoplay: true,
-
+        arrows: false,
+        fade: true,
         infinite: true,
+        dots: true,
+        mobileFirst:true,
       });
     });
   </script>
