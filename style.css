@@ -61,65 +61,14 @@
   max-width: 100%;
   position: relative;
 }
-.slick{
+.slick {
   width: 100%;
 }
-.slick img{
+.slick img {
   width: 100%;
   height: 88vh;
 }
-#carousel {
-  overflow: auto;
-  scroll-behavior: smooth;
-  scrollbar-width: none;
-}
 
-#carousel::-webkit-scrollbar {
-  height: 0;
-}
-
-#prev,
-#next {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  background: rgba(0, 0, 0, 0.9);
-  border: none;
-  padding: 8px;
-  width: 30px;
-  height: 30px;
-  border-radius: 100%;
-  outline: 0;
-  cursor: pointer;
-  position: absolute;
-}
-
-#prev {
-  top: 50%;
-  left: 0;
-  transform: translate(50%, -50%);
-  display: none;
-}
-
-#next {
-  top: 50%;
-  right: 0;
-  transform: translate(-50%, -50%);
-}
-
-#content {
-  display: grid;
-  grid-gap: 16px;
-  grid-auto-flow: column;
-  margin: auto;
-  box-sizing: border-box;
-}
-
-.item {
-  width: 180px;
-  height: 180px;
-  background: green;
-}
 .scritta {
   width: 180px;
   margin-left: -12.25em;
@@ -216,54 +165,6 @@ header {
   overflow: hidden;
   background-color: black;
   margin: 0;
-}
-.wrapper {
-  width: 500vw;
-  /* animation: slide 20s ease infinite; */
-}
-.slide {
-  float: left;
-  height: 100vh;
-  width: 100vw;
-}
-.slide img {
-  height: 110%;
-  width: 100%;
-  margin-top: -90px;
-}
-.bottom {
-  position: absolute;
-  width: 100%;
-  height: 5vh;
-  bottom: 0;
-  text-align: center;
-}
-.animation {
-  animation-name: animazione;
-  animation-duration: 2.5s;
-}
-@keyframes animazione {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-.bullet {
-  width: 15px;
-  height: 15px;
-  background-color: white;
-  display: inline-block;
-  margin-right: 8px;
-  transform-origin: center;
-  transform: rotate(0);
-  transition: all ease 0.3s;
-}
-.bullet:hover {
-  transform: rotate(45deg);
-  width: 16px;
-  height: 16px;
 }
 #middle {
   padding-top: 100vh;
@@ -372,9 +273,6 @@ input[type="email"] {
 .column span {
   font-size: 20.5px;
   padding: 1px;
-}
-.iframe {
-  width: 100%;
 }
 .column #loghetto {
   width: 35%;
@@ -698,11 +596,6 @@ input:checked + label .sub {
   .contenitore-slider {
     height: 45%;
   }
-  .slide img {
-    height: 54%;
-    margin-top: -50px;
-  }
-
   .box {
     margin: auto;
     display: block;
@@ -790,7 +683,7 @@ input:checked + label .sub {
   #content {
     grid-gap: 5px;
   }
-  .form-contatti{
+  .form-contatti {
     margin: 0 auto;
   }
   .scritta {
@@ -800,8 +693,8 @@ input:checked + label .sub {
     height: 60px;
     line-height: 60px;
   }
-  .article h1{
-    margin-top: 11vh;;
+  .article h1 {
+    margin-top: 11vh;
   }
   .logo {
     width: 60px;
@@ -823,10 +716,6 @@ input:checked + label .sub {
   .contenitore-slider {
     height: 60vh;
   }
-  .slide img {
-    height: 72%;
-  }
-
   .box {
     width: 32.5%;
     height: 34vh;
