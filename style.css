@@ -820,9 +820,7 @@ input:checked + label .sub {
   .slide img {
     height: 72%;
   }
-  #middle {
-    padding-top: 65vh;
-  }
+
   .box {
     width: 32.5%;
     height: 34vh;
