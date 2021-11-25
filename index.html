@@ -30,6 +30,7 @@
     <script src="script.js"></script>
   </head>
   <body>
+    <button class="anchor" onclick="return_to_top()" id="btn">UP!</button>
     <!-- Header e Nav-bar -->
     <header>
       <div class="header">
@@ -110,32 +111,32 @@
         <div id="carousel">
           <div id="content">
             <img
-                src="img/1.webp"
-                alt="immagine"
-                class="item"
-                value="5"
-                loading="lazy"
+              src="img/1.webp"
+              alt="immagine"
+              class="item"
+              value="5"
+              loading="lazy"
             />
             <img
-                src="img/2.webp"
-                alt="immagine"
-                class="item"
-                value="5"
-                loading="lazy"
+              src="img/2.webp"
+              alt="immagine"
+              class="item"
+              value="5"
+              loading="lazy"
             />
             <img
-                src="img/3.webp"
-                alt="immagine"
-                class="item"
-                value="5"
-                loading="lazy"
+              src="img/3.webp"
+              alt="immagine"
+              class="item"
+              value="5"
+              loading="lazy"
             />
             <img
-                src="img/4.webp"
-                alt="immagine"
-                class="item"
-                value="5"
-                loading="lazy"
+              src="img/4.webp"
+              alt="immagine"
+              class="item"
+              value="5"
+              loading="lazy"
             />
             <img
               src="img/5.webp"
@@ -172,10 +173,9 @@
               value="5"
               loading="lazy"
             />
+          </div>
         </div>
       </div>
-      <button aria-label="precendente" id="prev"></button>
-      <button aria-label="successivo" id="next"></button>
     </section>
     <section class="blocco-ulteriore">
       <div class="contenitore-middle">
@@ -371,6 +371,10 @@
         $("#carousel #content").slick({
           centerMode: true,
           centerPadding: "60px",
+          dots: true,
+          arrows: true,
+          nextArrow: '<button class="arrow1 next"></button>',
+          prevArrow: '<button class="arrow1 prev"></button>',
           slidesToShow: 3,
           responsive: [
             {
