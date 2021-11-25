@@ -13,7 +13,7 @@ for (var i = 0; i < 9; i++) {
     document.getElementsByClassName("sold")[i].style.visibility = "visible";
   }
 }
-function return_to_top(){
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
+function return_to_top() {
+  $("html, body").animate({scrollTop : 0}, "slow")
+
 }
