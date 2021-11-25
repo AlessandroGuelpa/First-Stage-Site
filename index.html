@@ -223,8 +223,10 @@
         </div>
         <!-- blocco con prezzo -->
         <div class="article float-right">
-          <div class="try"><p><s>$129.99</s></p>
-            <p class="red">$80.99</p></div>
+          <div class="try">
+            <p><s>$129.99</s></p>
+            <p class="red">$80.99</p>
+          </div>
         </div>
       </div>
     </section>
@@ -351,27 +353,6 @@
     ></script>
     <script>
       $(document).ready(() => {
-        // $(".slideshow .slick").slick({
-        //   autoplay: true,
-        //   fade: true,
-        //   infinite: true,
-        //   dots: true,
-        //   arrows: true,
-        //   nextArrow: '<button class="arrow next"></button>',
-        //   prevArrow: '<button class="arrow prev"></button>',
-        //   centerMode: true,
-        //   centerPadding: "60px",
-        //   slidesToShow: 3,
-        //   responsive: [
-        //     {
-        //       breakpoint: 1920,
-        //       settings: {
-        //         centerMode: true,
-        //         centerPadding: "40px",
-        //         slidesToShow: 1,
-        //       },
-        //     },
-        //   ],
         $(".slideshow .slick").slick({
           centerPadding: "60px",
           dots: true,
@@ -384,7 +365,7 @@
               breakpoint: 1920,
               settings: {
                 arrows: true,
-                centerMode:false,
+                centerMode: false,
                 centerPadding: "40px",
                 slidesToShow: 1,
               },
@@ -392,7 +373,6 @@
           ],
         });
         $("#carousel #content").slick({
-          centerMode: true,
           centerPadding: "60px",
           dots: true,
           arrows: true,
@@ -404,7 +384,6 @@
               breakpoint: 768,
               settings: {
                 arrows: true,
-                centerMode: true,
                 centerPadding: "40px",
                 slidesToShow: 3,
               },
@@ -413,7 +392,6 @@
               breakpoint: 480,
               settings: {
                 arrows: true,
-                centerMode: true,
                 centerPadding: "40px",
                 slidesToShow: 1,
               },
