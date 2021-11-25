@@ -6,6 +6,31 @@
   font-display: "swap";
   scroll-padding-top: 9rem;
 }
+.arrow {
+  border: 0;
+  background-color: rgba(255, 255, 255, 0.5);
+  display: block;
+  height: 40px;
+  width: 40px;
+  font-size: 35px;
+  text-align: center;
+  border-radius: 100%;
+  position: absolute;
+  top: 50%;
+  z-index: 5;
+  transform: translate(0, -50%);
+  outline: 0;
+  cursor: pointer;
+}
+.arrow:after {
+  content: "\21E6";
+}
+.arrow.next {
+  right: 0;
+}
+.arrow.next:after {
+  content: "\21E8";
+}
 /* cyrillic-ext */
 @font-face {
   font-family: "Raleway";
@@ -60,20 +85,19 @@
   width: 100%;
   max-width: 100%;
   position: relative;
+  height: 10vh;
 }
 .slick {
   width: 100%;
 }
-.slick img {
+.slick img{
   width: 100%;
-  height: 88vh;
+  height: 90vh;
+}
+#content img{
+  height: 40vh;
 }
 
-.scritta {
-  width: 180px;
-  margin-left: -12.25em;
-  display: inline-block;
-}
 .new {
   background-color: rgba(0, 0, 0, 0.6);
   height: 20px;
@@ -115,6 +139,7 @@ header {
 /* logo style */
 .logo {
   width: 90px;
+  height: 90px;
 }
 .logo img {
   width: 100%;
@@ -310,9 +335,6 @@ input:checked + label .sub {
   .contenitore-middle {
     margin: 0 1%;
   }
-  #content {
-    grid-gap: 4px;
-  }
   .scritta {
     margin-left: -11.5em;
   }
@@ -495,16 +517,9 @@ input:checked + label .sub {
   #middle {
     margin: 0 1% 0;
   }
-  #content {
-    grid-gap: 5px;
-  }
   .scritta {
     width: 160px;
     margin-left: -10.3em;
-  }
-  .item {
-    width: 160px;
-    height: 160px;
   }
   #next,
   #prev {
@@ -679,9 +694,6 @@ input:checked + label .sub {
 @media only screen and (min-device-width: 736px) and (max-device-width: 1024px) {
   .contenitore-middle {
     margin: 0 1%;
-  }
-  #content {
-    grid-gap: 5px;
   }
   .form-contatti {
     margin: 0 auto;

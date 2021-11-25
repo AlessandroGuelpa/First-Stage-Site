@@ -27,6 +27,7 @@
     <meta content="width=device-width, initial-scale=1" name="viewport" />
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type" />
     <meta content="utf-8" http-equiv="encoding" />
+    <script src="script.js"></script>
   </head>
   <body>
     <!-- Header e Nav-bar -->
@@ -106,114 +107,75 @@
     <section id="middle">
       <!--flexbox allineato in orizzontale, versione mobile si allineano in verticale -->
       <div class="contenitore-middle">
-        <div id="wrapper">
-          <div id="carousel">
-            <div id="content">
-              <img
+        <div id="carousel">
+          <div id="content">
+            <img
                 src="img/1.webp"
                 alt="immagine"
                 class="item"
-                value="10"
+                value="5"
                 loading="lazy"
-              />
-              <div class="scritta">
-                <div class="new float-left">New!</div>
-                <div class="sold float-right">Sold!</div>
-              </div>
-              <img
+            />
+            <img
                 src="img/2.webp"
                 alt="immagine"
                 class="item"
                 value="5"
                 loading="lazy"
-              />
-              <div class="scritta">
-                <div class="new float-left">New!</div>
-                <div class="sold float-right">Sold!</div>
-              </div>
-              <img
+            />
+            <img
                 src="img/3.webp"
                 alt="immagine"
                 class="item"
-                value="10"
+                value="5"
                 loading="lazy"
-              />
-              <div class="scritta">
-                <div class="new float-left">New!</div>
-                <div class="sold float-right">Sold!</div>
-              </div>
-              <img
+            />
+            <img
                 src="img/4.webp"
                 alt="immagine"
                 class="item"
                 value="5"
                 loading="lazy"
-              />
-              <div class="scritta">
-                <div class="new float-left">New!</div>
-                <div class="sold float-right">Sold!</div>
-              </div>
-              <img
-                src="img/5.webp"
-                alt="immagine"
-                class="item"
-                value="10"
-                loading="lazy"
-              />
-              <div class="scritta">
-                <div class="new float-left">New!</div>
-                <div class="sold float-right">Sold!</div>
-              </div>
-              <img
-                src="img/6.webp"
-                alt="immagine"
-                class="item"
-                value="5"
-                loading="lazy"
-              />
-              <div class="scritta">
-                <div class="new float-left">New!</div>
-                <div class="sold float-right">Sold!</div>
-              </div>
-              <img
-                src="img/7.webp"
-                alt="immagine"
-                class="item"
-                value="5"
-                loading="lazy"
-              />
-              <div class="scritta">
-                <div class="new float-left">New!</div>
-                <div class="sold float-right">Sold!</div>
-              </div>
-              <img
-                src="img/8.webp"
-                alt="immagine"
-                class="item"
-                value="10"
-                loading="lazy"
-              />
-              <div class="scritta">
-                <div class="new float-left">New!</div>
-                <div class="sold float-right">Sold!</div>
-              </div>
-              <img
-                src="img/9.webp"
-                alt="immagine"
-                class="item"
-                value="5"
-                loading="lazy"
-              />
-              <div class="scritta">
-                <div id="new" class="new float-left">New!</div>
-                <div id="sold" class="sold float-right">Sold!</div>
-              </div>
-            </div>
-          </div>
-          <button aria-label="precendente" id="prev"></button>
-          <button aria-label="successivo" id="next"></button>
+            />
+            <img
+              src="img/5.webp"
+              alt="immagine"
+              class="item"
+              value="5"
+              loading="lazy"
+            />
+            <img
+              src="img/6.webp"
+              alt="immagine"
+              class="item"
+              value="5"
+              loading="lazy"
+            />
+            <img
+              src="img/7.webp"
+              alt="immagine"
+              class="item"
+              value="5"
+              loading="lazy"
+            />
+            <img
+              src="img/8.webp"
+              alt="immagine"
+              class="item"
+              value="5"
+              loading="lazy"
+            />
+            <img
+              src="img/9.webp"
+              alt="immagine"
+              class="item"
+              value="5"
+              loading="lazy"
+            />
         </div>
       </div>
+      <button aria-label="precendente" id="prev"></button>
+      <button aria-label="successivo" id="next"></button>
     </section>
     <section class="blocco-ulteriore">
       <div class="contenitore-middle">
@@ -381,55 +343,57 @@
         </div>
       </div>
     </footer>
-  </body>
-  <script src="script.js"></script>
-  <script
-    type="text/javascript"
-    src="//code.jquery.com/jquery-1.11.0.min.js"
-  ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-3.6.0.min.js"
+    ></script>
 
-  <script
-    type="text/javascript"
-    src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
-  ></script>
-  <script
-    type="text/javascript"
-    src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
-  ></script>
-  <script>
-    $(document).ready(() => {
-      $(".slideshow .slick").slick({
-        autoplay: true,
-        fade: true,
-        infinite: true,
-        dots: true,
-        mobileFirst: true,
-      });
-      $("#carousel contenitore").slick({
-        centerMode: true,
-        centerPadding: "60px",
-        slidesToShow: 3,
-        responsive: [
-          {
-            breakpoint: 768,
-            settings: {
-              arrows: false,
-              centerMode: true,
-              centerPadding: "40px",
-              slidesToShow: 3,
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-3.3.2.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script>
+      $(document).ready(() => {
+        $(".slideshow .slick").slick({
+          autoplay: true,
+          fade: true,
+          infinite: true,
+          dots: true,
+          arrows: true,
+          nextArrow: '<button class="arrow next"></button>',
+          prevArrow: '<button class="arrow prev"></button>',
+          mobileFirst: true,
+        });
+        $("#carousel #content").slick({
+          centerMode: true,
+          centerPadding: "60px",
+          slidesToShow: 3,
+          responsive: [
+            {
+              breakpoint: 768,
+              settings: {
+                arrows: false,
+                centerMode: true,
+                centerPadding: "40px",
+                slidesToShow: 3,
+              },
             },
-          },
-          {
-            breakpoint: 480,
-            settings: {
-              arrows: false,
-              centerMode: true,
-              centerPadding: "40px",
-              slidesToShow: 1,
+            {
+              breakpoint: 480,
+              settings: {
+                arrows: false,
+                centerMode: true,
+                centerPadding: "40px",
+                slidesToShow: 1,
+              },
             },
-          },
-        ],
+          ],
+        });
       });
-    });
-  </script>
+    </script>
+  </body>
 </html>
