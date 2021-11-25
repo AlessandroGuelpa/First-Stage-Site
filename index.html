@@ -88,18 +88,13 @@
         <div class="slideshow">
           <!-- div immagini -->
           <div class="slick">
-            <div>
-              <img src="img/foto1.webp" alt="immagine" value="1" />
-            </div>
-            <div>
-              <img src="img/foto.webp" alt="immagine" value="2" />
-            </div>
-            <div>
-              <img src="img/immagine.webp" alt="immagine" value="3" />
-            </div>
-            <div>
-              <img src="img/sfondo.webp" alt="immagine" value="4" />
-            </div>
+            <img src="img/foto1.webp" alt="immagine" value="1" />
+
+            <img src="img/foto.webp" alt="immagine" value="2" />
+
+            <img src="img/immagine.webp" alt="immagine" value="3" />
+
+            <img src="img/sfondo.webp" alt="immagine" value="4" />
           </div>
         </div>
       </div>
@@ -358,15 +353,46 @@
     ></script>
     <script>
       $(document).ready(() => {
+        // $(".slideshow .slick").slick({
+        //   autoplay: true,
+        //   fade: true,
+        //   infinite: true,
+        //   dots: true,
+        //   arrows: true,
+        //   nextArrow: '<button class="arrow next"></button>',
+        //   prevArrow: '<button class="arrow prev"></button>',
+        //   centerMode: true,
+        //   centerPadding: "60px",
+        //   slidesToShow: 3,
+        //   responsive: [
+        //     {
+        //       breakpoint: 1920,
+        //       settings: {
+        //         centerMode: true,
+        //         centerPadding: "40px",
+        //         slidesToShow: 1,
+        //       },
+        //     },
+        //   ],
         $(".slideshow .slick").slick({
-          autoplay: true,
-          fade: true,
-          infinite: true,
+          centerMode: true,
+          centerPadding: "60px",
           dots: true,
           arrows: true,
           nextArrow: '<button class="arrow next"></button>',
           prevArrow: '<button class="arrow prev"></button>',
-          mobileFirst: true,
+          slidesToShow: 1,
+          responsive: [
+            {
+              breakpoint: 1920,
+              settings: {
+                arrows: true,
+                centerMode:false,
+                centerPadding: "40px",
+                slidesToShow: 1,
+              },
+            },
+          ],
         });
         $("#carousel #content").slick({
           centerMode: true,
@@ -380,7 +406,7 @@
             {
               breakpoint: 768,
               settings: {
-                arrows: false,
+                arrows: true,
                 centerMode: true,
                 centerPadding: "40px",
                 slidesToShow: 3,
@@ -389,7 +415,7 @@
             {
               breakpoint: 480,
               settings: {
-                arrows: false,
+                arrows: true,
                 centerMode: true,
                 centerPadding: "40px",
                 slidesToShow: 1,

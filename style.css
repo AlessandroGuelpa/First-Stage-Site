@@ -866,6 +866,10 @@ input:checked + label .sub {
     font-size: 30px;
     padding: 20px;
   }
+  .slick img{
+    height: 90vh;
+  }
+
   .column {
     height: 20vh;
   }
