@@ -18,7 +18,7 @@
   border-radius: 100%;
   outline: none;
   color: white;
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.9);
   cursor: pointer;
   padding: 15px;
 }
