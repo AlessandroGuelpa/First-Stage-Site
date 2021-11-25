@@ -22,6 +22,17 @@
   cursor: pointer;
   padding: 15px;
 }
+.slick-dots{
+  height: 60px;
+}
+.slick-dots li{
+  margin: 0 19px;
+}
+.slick-dots li button:before{
+  font-size: 20px;
+  opacity:1;
+  color: #ffffff;
+}
 .arrow {
   border: 0;
   margin: auto 10px;
@@ -140,7 +151,7 @@
 }
 .slick img {
   width: 100%;
-  height: 90vh;
+  height: 88vh;
 }
 #content img {
   height: 40vh;
@@ -420,6 +431,12 @@ input:checked + label .sub {
     width: 60px;
     height: 60px;
   }
+  .slick-dots li button:before{
+    font-size: 15px;
+  }
+  .slick-dots li{
+    margin: 0 5px;
+  }
   .menu > li {
     display: block;
     width: 100%;
@@ -581,6 +598,12 @@ input:checked + label .sub {
   }
   #middle {
     margin: 0 1% 0;
+  }
+  .slick-dots li button:before{
+    font-size: 15px;
+  }
+  .slick-dots li{
+    margin: 0 5px;
   }
   .scritta {
     width: 160px;
@@ -870,7 +893,7 @@ input:checked + label .sub {
 }
 @media screen and (min-device-width: 1920px) {
   .column span {
-    font-size: 20px;
+    font-size: 30px;
   }
   .column p {
     font-size: 30px;
@@ -887,13 +910,16 @@ input:checked + label .sub {
   }
   input[type="text"],
   input[type="email"] {
-    width: 10%;
-    font-size: 20px;
+    width: 20%;
+    font-size: 40px;
   }
   .information {
     margin-top: 100vh;
   }
   .form {
+    font-size: 45px;
+  }
+  .form p{
     font-size: 25px;
   }
   .portfolio > div {
