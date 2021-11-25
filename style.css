@@ -365,13 +365,12 @@ input[type="email"] {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  align-content: space-between;
-  justify-content: space-between;
-  align-items: center;
+  align-content: flex-start;
 }
 .portfolio > div {
-  width: 31%;
-  height: 10vh;
+  width: 33%;
+  height: 15vh;
+  padding:5px;
 }
 .portfolio img {
   width: 100%;
@@ -595,7 +594,7 @@ input:checked + label .sub {
   }
   .logo {
     width: 60px;
-    height: 60px;;
+    height: 60px;
   }
   .navigator {
     display: block;
@@ -672,21 +671,21 @@ input:checked + label .sub {
     height: 60px;
     top: 0;
   }
-  .slick img{
+  .slick img {
     height: 40vh;
   }
-  .arrow{
+  .arrow {
     height: 40px;
     width: 40px;
     font-size: 20px;
   }
-  #btn{
+  #btn {
     height: 45px;
     width: 45px;
     font-size: 10px;
   }
-  #middle{
-    margin-top:-50vh;
+  #middle {
+    margin-top: -50vh;
   }
   .contenitore-slider {
     height: 45%;
@@ -866,10 +865,9 @@ input:checked + label .sub {
     font-size: 30px;
     padding: 20px;
   }
-  .slick img{
+  .slick img {
     height: 90vh;
   }
-
   .column {
     height: 20vh;
   }
@@ -885,10 +883,21 @@ input:checked + label .sub {
     margin-top: 100vh;
   }
   .article h1 {
-    font-size: 60px;
-    margin-top: 300px;
+    display: table;
+    font-size: 100px;
+    margin-top: 500px;
   }
   .form {
     font-size: 25px;
+  }
+  .portfolio > div {
+    width: 33%;
+    height: 15vh;
+    padding:5px;
+  }
+  #btn{
+    height: 100px;
+    width: 100px;
+    font-size: 35px;
   }
 }
