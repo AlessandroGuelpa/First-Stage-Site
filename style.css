@@ -22,15 +22,15 @@
   cursor: pointer;
   padding: 15px;
 }
-.slick-dots{
+.slick-dots {
   height: 60px;
 }
-.slick-dots li{
+.slick-dots li {
   margin: 0 19px;
 }
-.slick-dots li button:before{
+.slick-dots li button:before {
   font-size: 20px;
-  opacity:1;
+  opacity: 1;
   color: #ffffff;
 }
 .arrow {
@@ -327,7 +327,7 @@ input[type="email"] {
 .article p {
   font-size: 90px;
 }
-.try{
+.try {
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -384,7 +384,7 @@ input[type="email"] {
 .portfolio > div {
   width: 33%;
   height: 15vh;
-  padding:5px;
+  padding: 5px;
 }
 .portfolio img {
   width: 100%;
@@ -431,10 +431,10 @@ input:checked + label .sub {
     width: 60px;
     height: 60px;
   }
-  .slick-dots li button:before{
+  .slick-dots li button:before {
     font-size: 15px;
   }
-  .slick-dots li{
+  .slick-dots li {
     margin: 0 5px;
   }
   .menu > li {
@@ -599,10 +599,10 @@ input:checked + label .sub {
   #middle {
     margin: 0 1% 0;
   }
-  .slick-dots li button:before{
+  .slick-dots li button:before {
     font-size: 15px;
   }
-  .slick-dots li{
+  .slick-dots li {
     margin: 0 5px;
   }
   .scritta {
@@ -811,14 +811,14 @@ input:checked + label .sub {
   #content img {
     height: 20vh;
   }
-  .slick img{
-    height: 60vh;;
+  .slick img {
+    height: 60vh;
   }
   .logo {
     width: 60px;
     height: 60px;
   }
-  #middle{
+  #middle {
     margin-top: -30vh;
   }
   .navigator {
@@ -899,6 +899,9 @@ input:checked + label .sub {
     font-size: 30px;
     padding: 20px;
   }
+  .information {
+    font-size: 50px;
+  }
   .slick img {
     height: 90vh;
   }
@@ -919,15 +922,15 @@ input:checked + label .sub {
   .form {
     font-size: 45px;
   }
-  .form p{
+  .form p {
     font-size: 25px;
   }
   .portfolio > div {
     width: 33%;
     height: 15vh;
-    padding:5px;
+    padding: 5px;
   }
-  #btn{
+  #btn {
     height: 100px;
     width: 100px;
     font-size: 35px;
