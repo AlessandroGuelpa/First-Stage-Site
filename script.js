@@ -6,14 +6,16 @@ for (var i = 0; i < 9; i++) {
   // se il valore nella posizione "i" nell'array è minore di 10
   if (array[i] < 10) {
     // rendi visibile l'elemento "new"
-    document.getElementsByClassName("new")[i].style.visibility = "visible";
+    const nuovo = document.createElement("div");
+    const content = document.createTextNode("New!")
+    nuovo.appendChild(content);
+    nuovo.style.textAlign = "left"
     // altrimenti se il valore è maggiore/uguale a 10
   } else {
     // rendi visibile l'elemento "sold"
-    document.getElementsByClassName("sold")[i].style.visibility = "visible";
+    const sold = document.createElement("div");
+    const content = document.createTextNode("Sold!")
+    sold.appendChild(content);
+    sold.style.textAlign = "right"
   }
-}
-
-function return_to_top() {
-  $("html, body").animate({ scrollTop: 0 }, "slow");
 }
