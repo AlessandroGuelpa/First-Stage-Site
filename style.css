@@ -182,6 +182,13 @@
     U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
     U+FEFF, U+FFFD;
 }
+.new{
+  width: 100px;
+  height: 100px;
+  color: black;
+  z-index:1000;
+  background-color: aqua;
+}
 #wrapper {
   width: 100%;
   max-width: 100vw;
@@ -202,20 +209,6 @@
 #content img{
   height: 100%;
   width: 100%;
-}
-.new {
-  background-color: rgba(0, 0, 0, 0.6);
-  height: 20px;
-  width: 50px;
-  color: white;
-  visibility: hidden;
-}
-.sold {
-  background-color: rgba(0, 0, 0, 0.6);
-  height: 20px;
-  width: 50px;
-  color: white;
-  visibility: hidden;
 }
 .blocco-ulteriore {
   margin-top: 100px;
