@@ -63,11 +63,13 @@
   cursor: pointer;
   padding: 15px;
   visibility: hidden;
-  transition: color .5s linear, background-color .5s linear;
+  transition: color 0.5s linear, background-color 0.5s linear;
 }
-#btn:hover{
-  color:black;
-  background-color: rgba(42, 42, 42, 0.397);
+#btn:hover {
+  color: black;
+  background-color: #ffffff;
+  border-style: solid;
+  border-width: 2px;
 }
 .slick-dots {
   height: 60px;
@@ -134,7 +136,8 @@
   content: ">";
 }
 
-.arrow1:hover,.arrow:hover {
+.arrow1:hover,
+.arrow:hover {
   background-color: rgba(0, 0, 0, 0.6);
   color: white;
 }
@@ -468,7 +471,7 @@ input:checked + label .sub {
   .orizzontal-menu {
     display: none;
   }
-  #content .provare{
+  #content .provare {
     padding: 0;
     height: 50vh;
   }
@@ -678,7 +681,7 @@ input:checked + label .sub {
   .orizzontal-menu {
     display: none;
   }
-  #content .provare{
+  #content .provare {
     padding: 0;
     height: 40vh;
   }
