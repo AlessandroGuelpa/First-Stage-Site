@@ -4,6 +4,7 @@
   box-sizing: border-box;
   font-family: "Raleway";
   scroll-padding-top: 9rem;
+  scroll-behavior: smooth;
 }
 .please {
   width: 25px;
@@ -402,7 +403,7 @@ input[type="email"] {
   height: 100%;
   justify-content: center;
 }
-.try p{
+.try p {
   animation: shake 2s;
   animation-iteration-count: infinite;
   width: 99%;
@@ -438,7 +439,6 @@ input[type="email"] {
   90% {
     transform: rotate(0deg);
   }
-
 }
 .article img {
   width: 100%;
