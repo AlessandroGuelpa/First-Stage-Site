@@ -73,7 +73,7 @@
   height: 60px;
 }
 .slick-dots li {
-  margin: 0 19px;
+  margin: 0 10px;
 }
 .slick-dots li button:before {
   font-size: 15px;
@@ -348,7 +348,7 @@ header {
 }
 .nascosto:hover span {
   opacity: 1;
-  color: black;
+  color: white;
 }
 .responsive {
   width: 100%;
