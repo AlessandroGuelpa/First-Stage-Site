@@ -67,7 +67,7 @@
 }
 #btn:hover{
   color:black;
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(42, 42, 42, 0.397);
 }
 .slick-dots {
   height: 60px;
@@ -78,7 +78,7 @@
 .slick-dots li button:before {
   font-size: 15px;
   opacity: 1;
-  color: #ffffff;
+  color: rgb(0, 255, 234);
 }
 .arrow {
   border: 0;
@@ -96,6 +96,7 @@
   transform: translate(0, -50%);
   outline: 0;
   cursor: pointer;
+  transition: color 0.5s linear, background 0.5s linear;
 }
 .arrow:after {
   content: "<";
@@ -133,7 +134,7 @@
   content: ">";
 }
 
-.arrow1:hover {
+.arrow1:hover,.arrow:hover {
   background-color: rgba(0, 0, 0, 0.6);
   color: white;
 }
@@ -208,7 +209,7 @@
   font-size: 20px;
   text-align: end;
   background-color: rgba(0, 0, 0, 0.6);
-  color: red;
+  color: rgb(0, 255, 0);
   position: absolute;
   margin-top: -50vh;
   visibility: hidden;
@@ -580,7 +581,7 @@ input:checked + label .sub {
     top: 0;
   }
   .slick img {
-    height: 50vh;
+    height: 40vh;
   }
   .arrow {
     height: 40px;
@@ -588,7 +589,7 @@ input:checked + label .sub {
     font-size: 20px;
   }
   #middle {
-    margin-top: -40vh;
+    margin-top: -50vh;
   }
   .contenitore-slider {
     height: 40%;
@@ -653,7 +654,7 @@ input:checked + label .sub {
   .column {
     width: 100%;
     margin-bottom: 0px;
-    border-style: solid;
+    border-style: solid hidden solid hidden;
     margin-top: 10%;
     height: 70vh;
   }
@@ -874,7 +875,7 @@ input:checked + label .sub {
   .column {
     width: 100%;
     margin-bottom: 0px;
-    border-style: solid;
+    border-style: solid hidden solid hidden;
     margin-top: 10%;
     height: 75vh;
   }
@@ -882,7 +883,7 @@ input:checked + label .sub {
     width: 50%;
   }
   .column span {
-    font-size: 20px;
+    font-size: 18px;
   }
   .portfolio {
     overflow: auto;
