@@ -3,8 +3,6 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "Raleway";
-  scroll-padding-top: 9rem;
-  scroll-behavior: smooth;
 }
 .please {
   width: 25px;

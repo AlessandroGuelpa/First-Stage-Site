@@ -1,13 +1,15 @@
-//quando la finestra cambia la propria y, viene compilata la funzione scroll 
+//quando la finestra cambia la propria y, viene compilata la funzione scroll
 window.onscroll = function () {
   scroll();
 };
-var btn = document.querySelector("#btn")
+var btn = document.querySelector("#btn");
 function scroll() {
-
-  if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+  if (
+    document.body.scrollTop > 300 ||
+    document.documentElement.scrollTop > 300
+  ) {
     btn.style.visibility = "visible";
-  }else{
+  } else {
     btn.style.visibility = "hidden";
   }
 }

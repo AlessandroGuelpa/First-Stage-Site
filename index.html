@@ -393,11 +393,36 @@
       </div>
     </footer>
     <script src="button.js"></script>
-
     <script
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
     ></script>
+    <script>
+      $(function () {
+        $('a[href*="#"]:not([href="#"])').click(function () {
+          $("html").css("scroll-padding-top: 9rem");
+          if (
+            location.pathname.replace(/^\//, "") ==
+              this.pathname.replace(/^\//, "") &&
+            location.hostname == this.hostname
+          ) {
+            var target = $(this.hash);
+            target = target.length
+              ? target
+              : $("[name=" + this.hash.slice(1) + "]");
+            if (target.length) {
+              $("html, body").animate(
+                {
+                  scrollTop: target.offset().top - 200,
+                },
+                1000
+              );
+              return false;
+            }
+          }
+        });
+      });
+    </script>
     <script>
       $(document).ready(() => {
         $(".slideshow .slick").slick({
