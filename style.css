@@ -303,7 +303,7 @@ header {
   text-align: center;
   width: 100%;
   height: 120%;
-  box-shadow: 10px 10px 5px grey;
+  box-shadow: 5px 7px 10px grey;
   border-radius: 10px;
   background-size: 100% 100%;
   display: table;
@@ -374,7 +374,7 @@ input[type="email"] {
   animation-iteration-count: infinite;
   width: 99%;
 }
-iframe{
+iframe {
   height: 100%;
   width: 100%;
 }
@@ -480,6 +480,9 @@ input:checked + label .sub {
   .orizzontal-menu {
     display: none;
   }
+  .slick-dots li button {
+    display: none;
+  }
   #content .provare {
     padding: 0;
     height: 50vh;
@@ -525,12 +528,7 @@ input:checked + label .sub {
     width: 60px;
     height: 60px;
   }
-  .slick-dots li button:before {
-    font-size: 15px;
-  }
-  .slick-dots li {
-    margin: 0 5px;
-  }
+
   .menu > li {
     display: block;
     width: 100%;
@@ -690,6 +688,9 @@ input:checked + label .sub {
   .orizzontal-menu {
     display: none;
   }
+  .slick-dots li button {
+    display: none;
+  }
   #content .provare {
     padding: 0;
     height: 40vh;
@@ -710,12 +711,6 @@ input:checked + label .sub {
   }
   #middle {
     margin: 0 1% 0;
-  }
-  .slick-dots li button:before {
-    font-size: 15px;
-  }
-  .slick-dots li {
-    margin: 0 5px;
   }
   .scritta {
     width: 160px;
@@ -914,6 +909,10 @@ input:checked + label .sub {
   .form-contatti {
     margin: 30px auto;
   }
+  .blocco-ulteriore {
+    padding: 10px;
+    margin-left: -10px;
+  }
   .scritta {
     margin-left: -11.55em;
   }
@@ -934,10 +933,13 @@ input:checked + label .sub {
   #middle {
     margin-top: -30vh;
   }
-  #content .provare{
-    height: 25vh;
+  #content .provare {
+    height: 15rem;
   }
-  #content .provare img{
+  .slick-dots li button {
+    display: none;
+  }
+  #content .provare img {
     height: 100%;
   }
   .navigator {
@@ -958,12 +960,12 @@ input:checked + label .sub {
     height: 60vh;
   }
   .box {
-    width: 32.5%;
+    width: 32.8%;
     height: 34vh;
     margin: auto;
   }
   .portfolio img {
-    padding: 6px;
+    padding: 2px;
   }
   .article-block {
     height: 40%;
@@ -1007,11 +1009,11 @@ input:checked + label .sub {
   }
   .portfolio > div {
     width: 50%;
-    height: 14rem;
+    height: 13rem;
   }
-iframe{
-  height: 40vh;
-}
+  iframe {
+    height: 40vh;
+  }
 }
 @media screen and (min-device-width: 1920px) {
   .column span {
