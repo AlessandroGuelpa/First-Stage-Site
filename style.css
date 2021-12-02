@@ -1,9 +1,16 @@
+/* stile da applicare a tutta la pagina */
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   font-family: "Raleway";
 }
+/* in caso di fadeIn con jquery */
+/* body{
+  display: none;
+} */
+
+/* burger menu  */
 .please {
   width: 25px;
   height: 30px;
@@ -46,6 +53,7 @@
   opacity: 1;
   visibility: visible;
 }
+/* button to top style */
 #btn {
   position: fixed;
   bottom: 20px;
@@ -64,12 +72,14 @@
   visibility: hidden;
   transition: color 0.5s linear, background-color 0.5s linear;
 }
+/* quando passi sopra al botton col mouse */
 #btn:hover {
   color: black;
   background-color: #ffffff;
   border-style: solid;
   border-width: 2px;
 }
+/* bullet dello slick */
 .slick-dots {
   height: 60px;
 }
@@ -81,6 +91,7 @@
   opacity: 1;
   color: rgb(0, 255, 234);
 }
+/* arrow dello slick */
 .arrow {
   border: 0;
   margin: auto 10px;
@@ -134,12 +145,13 @@
 .arrow1.next:after {
   content: ">";
 }
-
+/* quando passi col mouse sopra alla nav dello slick */
 .arrow1:hover,
 .arrow:hover {
   background-color: rgba(0, 0, 0, 0.6);
   color: white;
 }
+/* default css per il font di google */
 /* cyrillic-ext */
 @font-face {
   font-family: "Raleway";
@@ -190,6 +202,7 @@
     U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
     U+FEFF, U+FFFD;
 }
+/* new e sold css per il carosello */
 .new {
   width: 0.6%;
   padding-left: 10px;
@@ -348,6 +361,7 @@ header {
   display: table-cell;
   vertical-align: middle;
 }
+/* quando passi sopra alle immagini viene mostrata la scritta */
 .nascosto:hover span {
   opacity: 1;
   color: white;
@@ -366,6 +380,7 @@ header {
 .form {
   font-size: 30px;
 }
+/* cambiare stile agli input */
 input[type="submit"] {
   width: 10%;
   font-size: 20px;
@@ -406,6 +421,7 @@ input[type="email"] {
   animation-iteration-count: infinite;
   width: 99%;
 }
+/* animazione shake  */
 @keyframes shake {
   0% {
     transform: rotate(0deg);

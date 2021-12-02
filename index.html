@@ -2,42 +2,55 @@
 <html lang="it">
   <head>
     <title>Scarpe</title>
+    <!-- css dello slick -->
     <link
       rel="stylesheet"
       type="text/css"
       href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
     />
+    <!-- lo stile css dello slick -->
     <link
       rel="stylesheet"
       type="text/css"
       href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
     />
+    <!-- icona del sito -->
     <script src="nav.js"></script>
     <link rel="icon" href="img/logo.webp" type="image/x-icon" />
+    <!-- google font, utilizza la funzione preload per specificare al browser che è un elemento di cui la pagina ha bisogno immediato -->
     <link
       href="https://fonts.googleapis.com/css?family=Raleway&display=swap"
       rel="preload"
-      as="style"
+      as="font"
     />
+    <!-- google font -->
     <link
       href="https://fonts.googleapis.com/css?family=Raleway&display=swap"
       rel="stylesheet"
     />
+    <!-- jquery per il funzionamento dello script nella pagina -->
     <script
       type="text/javascript"
       src="https://code.jquery.com/jquery-3.6.0.min.js"
     ></script>
-
+    <!-- jquery per il funzionamento dello script nella pagina -->
     <script
       type="text/javascript"
       src="https://code.jquery.com/jquery-migrate-3.3.2.min.js"
     ></script>
+    <!-- foglio di stile -->
     <link rel="stylesheet" href="style.css" type="text/css" />
     <meta content="width=device-width, initial-scale=1" name="viewport" />
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type" />
     <meta content="utf-8" http-equiv="encoding" />
   </head>
   <body>
+    <!-- <script>       questa funzione aggiunge un fadeIn a tutto il body quando la pagina è caricata
+      $(document).ready(function () {
+        $("body").fadeIn(2000);
+      });
+    </script> -->
+    <!-- bottone che chiama la funzione quando viene cliccato -->
     <button onclick="return_to_top()" id="btn">UP!</button>
     <!-- Header e Nav-bar -->
     <header>
@@ -69,11 +82,13 @@
           <!-- menu nascosto -->
         </nav>
       </div>
+      <!-- burger area -->
       <div class="please float-right" onclick="funzione()">
         <div></div>
         <div></div>
         <div></div>
       </div>
+      <!-- burger nav -->
       <div class="work">
         <ul>
           <br /><br />
@@ -109,9 +124,8 @@
         </div>
       </div>
     </section>
-    <!-- sezione 3 immagini + testo hover -->
+    <!-- carosello slick-slider con sold e new attraverso valori del div -->
     <section id="middle">
-      <!--flexbox allineato in orizzontale, versione mobile si allineano in verticale -->
       <div class="contenitore-middle">
         <div id="carousel">
           <div id="content">
@@ -122,6 +136,7 @@
                 class="item"
                 loading="lazy"
               />
+              <!-- loading lazy carica il contenuto soltanto al momento della richiesta, per ottimizzare il caricamento della pagina -->
               <div class="new">new!</div>
               <div class="sold">sold</div>
             </div>
@@ -210,22 +225,27 @@
       </div>
     </section>
     <script>
-      // ciclo da 0 a 9
-      var array = [];
+      // ciclo da 0 a 9 con il valore di "i" che aumenta di 1 ad ogni ciclo
       for (var i = 0; i < 9; i++) {
-        // spingi nell'array il valore della classe "item"
+        // salvo in una variable la class "provare"
         var myVar = $(".provare");
+        // stampo nella console i valori della classe provare cercandoli negli attributi e scorrendo l'array con il valore della i
         console.log(myVar[i].attributes.value.value);
+        // salvo nella variabile p tutti i valori trovati
         var p = myVar[i].attributes.value.value;
+        // se il valore di p nella posizione corrente è > 10:
         if (p > 10) {
+          // aggiungi alla classe "new" lo stile "visibility" con valore "visible", rendendo visibile la classe
           document.getElementsByClassName("new")[i].style.visibility =
             "visible";
         } else {
+          //altrimenti aggiungi alla classe "sold" lo stile "visibility" con valore "visible", rendendo visibile la classe
           document.getElementsByClassName("sold")[i].style.visibility =
             "visible";
         }
       }
     </script>
+    <!-- sezione 3 immagini + testo hover -->
     <section class="blocco-ulteriore">
       <div class="contenitore-middle">
         <div class="box">
@@ -398,42 +418,48 @@
       src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
     ></script>
     <script>
+      // script per rallentare lo scrolling
       $(function () {
-        $('a[href*="#"]:not([href="#"])').click(function () {
-          $("html").css("scroll-padding-top: 9rem");
-          if (
-            location.pathname.replace(/^\//, "") ==
-              this.pathname.replace(/^\//, "") &&
-            location.hostname == this.hostname
-          ) {
-            var target = $(this.hash);
-            target = target.length
-              ? target
-              : $("[name=" + this.hash.slice(1) + "]");
-            if (target.length) {
-              $("html, body").animate(
-                {
-                  scrollTop: target.offset().top - 200,
-                },
-                1000
-              );
-              return false;
-            }
+        // cliccando l'elemento <a> con tutti i valori di href "#"
+        $('a[href*="#"]').click(function () {
+          // this.hash legge l'attributo di href e prende la parte di url che inizia per #
+          var target = $(this.hash);
+          // check per controllare se target e target.lenght non siano null oppure undefined e assegna target a se stesso oppure a &('[name....')
+          target = target.length ? target: $("[name=" + this.hash.slice(1) + "]");
+          // se target.lenght è true
+          if (target.length) {
+            // scorri il body fino al target 
+            $("html, body").animate(
+              {
+                // scrolling - 200 in modo da non farlo coprire con l'header, equivalente di "scroll-padding-top"
+                scrollTop: target.offset().top - 200,
+              },
+              // impiegandoci 1 secondo
+              1000
+            );
+            return false;
           }
         });
       });
     </script>
     <script>
+      // slideshow
       $(document).ready(() => {
         $(".slideshow .slick").slick({
           centerPadding: "60px",
+          // bullet
           dots: true,
+          // frecce di navigazione
           arrows: true,
+          // credo le frecce utilizzando bottoni
           nextArrow: '<button class="arrow next"></button>',
           prevArrow: '<button class="arrow prev"></button>',
+          // 1 slide da mostrare
           slidesToShow: 1,
+          // questo è per renderla responsive
           responsive: [
             {
+              // min-device-width = 1920
               breakpoint: 1920,
               settings: {
                 arrows: true,
@@ -444,6 +470,7 @@
             },
           ],
         });
+        // carosello
         $("#carousel #content").slick({
           centerPadding: "60px",
           dots: true,
