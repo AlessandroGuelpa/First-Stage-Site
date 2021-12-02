@@ -906,6 +906,10 @@ input:checked + label .sub {
   .contenitore-middle {
     margin: 0 1%;
   }
+  .form-newsletter{
+    margin-bottom: 100px;
+    margin-top:100px;
+  }
   .form-contatti {
     margin: 30px auto;
   }
@@ -1000,7 +1004,7 @@ input:checked + label .sub {
     width: 50%;
   }
   .column span {
-    font-size: 30px;
+    font-size: 25px;
     padding: 50px;
   }
   .portfolio {
