@@ -11,7 +11,7 @@ $(function () {
       $("html, body").animate(
         {
           // scrolling - 200 in modo da non farlo coprire con l'header, equivalente di "scroll-padding-top"
-          scrollTop: target.offset().top - 200,
+          scrollTop: target.offset().top - 80,
         },
         // impiegandoci 1 secondo
         1000
@@ -49,7 +49,7 @@ $(function () {
       $("html, body").animate(
         {
           // scrolling - 200 in modo da non farlo coprire con l'header, equivalente di "scroll-padding-top"
-          scrollTop: target.offset().top - 200,
+          scrollTop: target.offset().top - 80,
         },
         // impiegandoci 1 secondo
         1000
@@ -68,7 +68,7 @@ $(function () {
       $("html, body").animate(
         {
           // scrolling - 200 in modo da non farlo coprire con l'header, equivalente di "scroll-padding-top"
-          scrollTop: target.offset().top - 200,
+          scrollTop: target.offset().top - 80,
         },
         // impiegandoci 1 secondo
         1000

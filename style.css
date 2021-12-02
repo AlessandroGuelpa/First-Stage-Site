@@ -1009,7 +1009,9 @@ input:checked + label .sub {
     width: 50%;
     height: 14rem;
   }
-
+iframe{
+  height: 40vh;
+}
 }
 @media screen and (min-device-width: 1920px) {
   .column span {
