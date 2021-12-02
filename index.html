@@ -44,7 +44,7 @@
     <header>
       <div class="header">
         <!-- Logo -->
-        <div class="logo float-left">
+        <div class="logo float-left"  onclick="return_to_top()" >
           <a href="#" class="l"
             ><img
               src="img/logo.webp"
@@ -343,13 +343,7 @@
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img
-              src="img/screen.webp"
-              width="100%"
-              heigth="100%"
-              alt="maps"
-              class="iframe"
-          /></a>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2962.4728480590306!2d12.40112651544664!3d42.05448307920854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f42dd5e6cf605%3A0xfcfda200926a78cb!2sGesca!5e0!3m2!1sit!2sit!4v1638440451258!5m2!1sit!2sit" tyle="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
       </div>
     </footer>
@@ -362,7 +356,78 @@
       // script per rallentare lo scrolling
       $(function () {
         // cliccando l'elemento <a> con tutti i valori di href "#"
-        $('a[href*="#"]').click(function () {
+        $(
+          'a[href="#noi"]'
+        ).click(function () {
+          // this.hash legge l'attributo di href e prende la parte di url che inizia per #
+          var target = $(this.hash);
+          // check per controllare se target e target.lenght non siano null oppure undefined e assegna target a se stesso oppure a &('[name....')
+          target = target.length
+            ? target
+            : $("[name=" + this.hash.slice(1) + "]");
+          // se target.lenght è true
+          if (target.length) {
+            // scorri il body fino al target
+            $("html, body").animate(
+              {
+                // scrolling - 200 in modo da non farlo coprire con l'header, equivalente di "scroll-padding-top"
+                scrollTop: target.offset().top - 200,
+              },
+              // impiegandoci 1 secondo
+              1000
+            );
+            return false;
+          }
+        });
+        $(
+          'a[href="#info"]'
+        ).click(function () {
+          // this.hash legge l'attributo di href e prende la parte di url che inizia per #
+          var target = $(this.hash);
+          // check per controllare se target e target.lenght non siano null oppure undefined e assegna target a se stesso oppure a &('[name....')
+          target = target.length
+            ? target
+            : $("[name=" + this.hash.slice(1) + "]");
+          // se target.lenght è true
+          if (target.length) {
+            // scorri il body fino al target
+            $("html, body").animate(
+              {
+                // scrolling - 200 in modo da non farlo coprire con l'header, equivalente di "scroll-padding-top"
+                scrollTop: target.offset().top - 200,
+              },
+              // impiegandoci 1 secondo
+              1000
+            );
+            return false;
+          }
+        });
+        $(
+          'a[href="#port"]'
+        ).click(function () {
+          // this.hash legge l'attributo di href e prende la parte di url che inizia per #
+          var target = $(this.hash);
+          // check per controllare se target e target.lenght non siano null oppure undefined e assegna target a se stesso oppure a &('[name....')
+          target = target.length
+            ? target
+            : $("[name=" + this.hash.slice(1) + "]");
+          // se target.lenght è true
+          if (target.length) {
+            // scorri il body fino al target
+            $("html, body").animate(
+              {
+                // scrolling - 200 in modo da non farlo coprire con l'header, equivalente di "scroll-padding-top"
+                scrollTop: target.offset().top - 200,
+              },
+              // impiegandoci 1 secondo
+              1000
+            );
+            return false;
+          }
+        });
+        $(
+          'a[href="#dove"]'
+        ).click(function () {
           // this.hash legge l'attributo di href e prende la parte di url che inizia per #
           var target = $(this.hash);
           // check per controllare se target e target.lenght non siano null oppure undefined e assegna target a se stesso oppure a &('[name....')

@@ -1,4 +1,4 @@
-//quando la finestra cambia la propria y, viene chiamata la funzione scroll
+//quando la finestra cambia la propria y, viene chiamatahow to la funzione scroll
 window.onscroll = function () {
   scroll();
 };
