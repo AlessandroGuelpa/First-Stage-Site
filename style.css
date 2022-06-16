@@ -213,9 +213,9 @@
 header {
   position: sticky;
   top: 0;
-  height: 90px;
+  height: 60px;
   background-color: black;
-  line-height: 90px;
+  line-height: 60px;
   width: 100%;
   z-index: 1000;
 }
@@ -232,11 +232,13 @@ header {
 /*  */
 /* logo style */
 .logo {
-  width: 90px;
-  height: 90px;
+  width: 60px;
+  height: 60px;
+  posi
 }
 .logo img {
   width: 100%;
+  border-radius: 100%;
 }
 /* desktop menu style */
 .orizzontal-menu {
@@ -248,7 +250,7 @@ header {
   text-decoration: none;
   color: white;
   padding-right: 25px;
-  font-size: 25px;
+  font-size: 17px;
   border-right: 2px dotted transparent;
   transition: 0.4s;
 }
@@ -256,7 +258,7 @@ header {
 .link:hover {
   background-color: white;
   color: black;
-  padding: 30px 20px;
+  padding: 20px 20px;
 }
 /* burger */
 
